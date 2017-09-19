@@ -1,0 +1,2 @@
+android.app.Application
+com.report.kontrole.AvoidATicket
