@@ -118,9 +118,11 @@ class MonoPackageManager_Resources {
 		"Xamarin.Facebook.AudienceNetwork.dll",
 		"Xamarin.Facebook.dll",
 		"Xamarin.GooglePlayServices.Ads.dll",
+		"Xamarin.GooglePlayServices.Base.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Maps.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_25";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_24";
 }

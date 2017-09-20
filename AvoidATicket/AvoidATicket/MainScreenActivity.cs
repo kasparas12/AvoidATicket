@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -11,6 +10,8 @@ using Android.Views;
 using Android.Widget;
 using Xamarin.Facebook;
 using Xamarin.Facebook.Login.Widget;
+using Android.Gms.Maps;
+using Android.Gms.Maps.Model;
 
 namespace AvoidATicket
 {
@@ -21,14 +22,22 @@ namespace AvoidATicket
     ///     </FacebookLogin>
     /// </summary>
     [Activity(Label = "MainScreenActivity")]
-    public class MainScreenActivity : Activity
+    public class MainScreenActivity : Activity, IOnMapReadyCallback
     {
         private Bundle arguments;
 
         private String login_type;
 
         // Arguments (Facebook login)
-        private Profile facebookProfile;     
+        private Profile facebookProfile;
+
+        public void OnMapReady(GoogleMap googleMap)
+        {
+            MarkerOptions markerOptions = new MarkerOptions();
+            markerOptions.SetPosition(new LatLng(16.03, 108));
+            markerOptions.SetTitle("My Position");
+            googleMap.AddMarker(markerOptions);
+        }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,14 +46,15 @@ namespace AvoidATicket
             SetContentView(Resource.Layout.activity_mainscreen);
             // Create your application here
 
-            arguments = this.Intent.Extras;
+            MapFragment mapFragment = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
+            mapFragment.GetMapAsync(this);
+
+           /* arguments = this.Intent.Extras;
             login_type = arguments.GetString("login_type");
             if (login_type.Equals("Facebook"))
             {
                 facebookProfile = arguments.GetParcelable("user_profile") as Profile;
-                FindViewById<ProfilePictureView>(Resource.Id.profile_picture).ProfileId = facebookProfile.Id;
-                FindViewById<TextView>(Resource.Id.user_name).Text = facebookProfile.Name;
-            }
+            }*/
         }
     }
 }

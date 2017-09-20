@@ -8,6 +8,8 @@ using Android.Content;
 using Android.Runtime;
 using Xamarin.Facebook.Login;
 using System;
+using Android.Content.PM;
+using Java.Security;
 
 namespace AvoidATicket
 {
@@ -30,6 +32,18 @@ namespace AvoidATicket
             LoginButton login = FindViewById<LoginButton>(Resource.Id.login_facebook_button);
             manager = CallbackManagerFactory.Create();
             login.RegisterCallback(manager, this);
+
+            
+            PackageInfo info = this.PackageManager.GetPackageInfo("com.report.kontrole.AvoidATicket", PackageInfoFlags.Signatures);
+
+            foreach (Android.Content.PM.Signature signature in info.Signatures)
+            {
+                MessageDigest md = MessageDigest.GetInstance("SHA");
+                md.Update(signature.ToByteArray());
+
+                string keyhash = Convert.ToBase64String(md.Digest());
+                Console.WriteLine("KeyHash: {0}", keyhash);
+            }
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
