@@ -27,7 +27,7 @@
     </activity>
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <activity android:label="MainScreenActivity" android:name="md5c80583604c74bde7ab5a200aaf791437.MainScreenActivity" />
-    <activity android:label="AvoidATicket" android:name="md5c80583604c74bde7ab5a200aaf791437.LoginActivity">
+    <activity android:icon="@drawable/bus300x300" android:label="AvoidATicket" android:name="md5c80583604c74bde7ab5a200aaf791437.LoginActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

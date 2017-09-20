@@ -13,7 +13,7 @@ using Java.Security;
 
 namespace AvoidATicket
 {
-    [Activity(Label = "AvoidATicket", MainLauncher = true)]
+    [Activity(Label = "AvoidATicket", MainLauncher = true, Icon = "@drawable/BUS300x300")]
     public class LoginActivity : Activity, IFacebookCallback
     {
         private ICallbackManager manager;
