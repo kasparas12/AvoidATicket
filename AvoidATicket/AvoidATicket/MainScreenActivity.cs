@@ -25,9 +25,10 @@ namespace AvoidATicket
     {
         private Bundle arguments;
 
-        // Arguments (Facebook login)
-        private Profile facebookProfile;
         private String login_type;
+
+        // Arguments (Facebook login)
+        private Profile facebookProfile;     
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
