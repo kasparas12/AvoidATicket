@@ -2,13 +2,13 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Bolts.AppLinks\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\ExoPlayer\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Facebook.AudienceNetwork\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Facebook\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Bolts.AppLinks\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\ExoPlayer\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Facebook.AudienceNetwork\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Facebook\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Bolts.AppLinks\library_project_imports\assets</ResolvedAssetDirectory>
@@ -18,12 +18,12 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Bolts.AppLinks.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\ExoPlayer.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Facebook.AudienceNetwork.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Facebook.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Bolts.AppLinks.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\ExoPlayer.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Facebook.AudienceNetwork.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Tomas\source\repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\__library_projects__\Xamarin.Facebook.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>
