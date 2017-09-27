@@ -129,7 +129,6 @@ C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Xamarin.GooglePlayServices.Maps.dll
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\ExoPlayer.dll.mdb
-C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\AvoidATicket.csprojResolveAssemblyReference.cache
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\XbdMerge\Xamarin.Android.Support.Annotations.dll.stamp
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\XbdMerge\Xamarin.Android.Support.Compat.dll.stamp
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\XbdMerge\Xamarin.Android.Support.Core.UI.dll.stamp
@@ -152,9 +151,6 @@ C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\values\strings.xml
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\R.cs.flag
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\uploadflags.txt
-C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.dll.mdb
-C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\AvoidATicket.dll.mdb
-C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\ExoPlayer.dll.mdb
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\drawable\bus300x300.png
 C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.dll
 C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.pdb
@@ -210,3 +206,7 @@ C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATi
 C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.dll.mdb
 C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\AvoidATicket.dll.mdb
 C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\ExoPlayer.dll.mdb
+C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\layout\templayout.xml
+C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.dll.mdb
+C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\AvoidATicket.dll.mdb
+C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\ExoPlayer.dll.mdb

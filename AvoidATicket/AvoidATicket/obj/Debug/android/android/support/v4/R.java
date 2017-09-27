@@ -2644,11 +2644,14 @@ containing a value of this type.
         public static final int line3=0x7f0a00a7;
         public static final int listMode=0x7f0a0027;
         public static final int list_item=0x7f0a0048;
+        public static final int log_off_button=0x7f0a00ac;
         public static final int login_account_button=0x7f0a0077;
         public static final int login_facebook_button=0x7f0a0078;
         public static final int login_password=0x7f0a0076;
         public static final int login_username=0x7f0a0075;
         public static final int map=0x7f0a0079;
+        public static final int map_edit=0x7f0a00ae;
+        public static final int map_view=0x7f0a00ad;
         public static final int media_actions=0x7f0a009a;
         public static final int mediacontroller_progress=0x7f0a008d;
         public static final int messenger_send_button=0x7f0a0093;
@@ -2667,6 +2670,8 @@ containing a value of this type.
         public static final int parentPanel=0x7f0a004d;
         public static final int play=0x7f0a0089;
         public static final int prev=0x7f0a0087;
+        public static final int profile_image=0x7f0a00aa;
+        public static final int profile_name=0x7f0a00ab;
         public static final int progress_bar=0x7f0a007c;
         public static final int progress_circular=0x7f0a0006;
         public static final int progress_horizontal=0x7f0a0007;
@@ -2798,6 +2803,7 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f03003a;
         public static final int select_dialog_singlechoice_material=0x7f03003b;
         public static final int support_simple_spinner_dropdown_item=0x7f03003c;
+        public static final int templayout=0x7f03003d;
     }
     public static final class string {
         public static final int GoogleKey=0x7f05007e;

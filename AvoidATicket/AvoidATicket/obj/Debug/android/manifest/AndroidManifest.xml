@@ -33,6 +33,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="MapActivity" android:name="md5c80583604c74bde7ab5a200aaf791437.MapActivity" />
     <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
     <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.ads.InterstitialAdActivity" />
     <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent" />

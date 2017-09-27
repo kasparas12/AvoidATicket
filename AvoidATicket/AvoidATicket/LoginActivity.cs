@@ -22,18 +22,30 @@ namespace AvoidATicket
         private EditText password;
         private Button loginButton;
 
+        private enum LoginType
+        {
+            Facebook,
+            Local
+        };
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
+            if (AccessToken.CurrentAccessToken != null && Profile.CurrentProfile != null)
+                SwitchToMainActivity(LoginType.Facebook);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_login);
-           
+
             LoginButton login = FindViewById<LoginButton>(Resource.Id.login_facebook_button);
             manager = CallbackManagerFactory.Create();
             login.RegisterCallback(manager, this);
 
-            
+
+           
+
+            ///Can be used to generate a key hash
+            /*
             PackageInfo info = this.PackageManager.GetPackageInfo("com.report.kontrole.AvoidATicket", PackageInfoFlags.Signatures);
 
             foreach (Android.Content.PM.Signature signature in info.Signatures)
@@ -43,7 +55,7 @@ namespace AvoidATicket
 
                 string keyhash = Convert.ToBase64String(md.Digest());
                 Console.WriteLine("KeyHash: {0}", keyhash);
-            }
+            }*/
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
@@ -70,16 +82,28 @@ namespace AvoidATicket
         public void OnSuccess(Java.Lang.Object result)
         {
             //launch a new activity and pass the profile in as an argument
-            Intent launchIntent = new Intent(this, typeof(MainScreenActivity));
-            launchIntent.PutExtra("login_type", "Facebook");
-            launchIntent.PutExtra("user_profile", Profile.CurrentProfile);
-            StartActivity(launchIntent);
+            SwitchToMainActivity(LoginType.Facebook);
         }
 
         /*
          * <<---  IFacebookCalback interface implementation
          */
         
+        private void SwitchToMainActivity(LoginType loginType)
+        {
+            if (loginType == LoginType.Facebook)
+            {
+                Intent launchIntent = new Intent(this, typeof(MainScreenActivity));
+                launchIntent.PutExtra("login_type", "Facebook");
+                launchIntent.PutExtra("user_profile", Profile.CurrentProfile);
+                launchIntent.SetFlags(ActivityFlags.SingleTop);
+                StartActivity(launchIntent);
+            }
+            else if (loginType == LoginType.Local)
+            {
+
+            }
+        }
     }
 
 }

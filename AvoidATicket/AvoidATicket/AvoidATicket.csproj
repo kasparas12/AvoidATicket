@@ -125,6 +125,7 @@
   <ItemGroup>
     <Compile Include="MainScreenActivity.cs" />
     <Compile Include="LoginActivity.cs" />
+    <Compile Include="MapActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -135,6 +136,9 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\activity_mainscreen.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\templayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
