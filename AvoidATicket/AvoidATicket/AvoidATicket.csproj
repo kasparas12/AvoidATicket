@@ -135,10 +135,10 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\activity_mainscreen.axml">
+    <AndroidResource Include="Resources\layout\activity_map.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\templayout.axml">
+    <AndroidResource Include="Resources\layout\activity_mainscreen.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

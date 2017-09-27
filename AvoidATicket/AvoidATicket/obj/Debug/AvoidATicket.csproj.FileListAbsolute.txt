@@ -206,7 +206,8 @@ C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATi
 C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.dll.mdb
 C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\AvoidATicket.dll.mdb
 C:\Users\Tomas\Source\Repos\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\ExoPlayer.dll.mdb
-C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\layout\templayout.xml
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.dll.mdb
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\AvoidATicket.dll.mdb
 C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\ExoPlayer.dll.mdb
+C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\AvoidATicket.csprojResolveAssemblyReference.cache
+C:\Users\Rytis\Desktop\Projects\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\layout\activity_map.xml

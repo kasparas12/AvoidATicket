@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/map"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    class="com.google.android.gms.maps.MapFragment" />
+    android:background="@android:color/holo_orange_light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4169E1"
+        android:orientation="horizontal">
+        <com.facebook.login.widget.ProfilePictureView
+          android:id="@+id/profile_image"
+          android:layout_width="75dp"
+          android:layout_height="65dp"
+          android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Name goes here"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/log_off_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Log off" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Open map" />
+        <Button
+            android:id="@+id/map_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Put marker" />
+    </LinearLayout>
+</LinearLayout>

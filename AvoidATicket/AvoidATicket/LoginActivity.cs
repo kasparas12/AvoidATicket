@@ -22,7 +22,7 @@ namespace AvoidATicket
         private EditText password;
         private Button loginButton;
 
-        private enum LoginType
+        public enum LoginType
         {
             Facebook,
             Local

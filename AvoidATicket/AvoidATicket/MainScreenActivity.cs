@@ -23,7 +23,7 @@ namespace AvoidATicket
     ///     </FacebookLogin>
     /// </summary>
     [Activity(Label = "MainScreenActivity")]
-    public class MainScreenActivity : Activity, IOnMapReadyCallback
+    public class MainScreenActivity : Activity
     {
         private Bundle arguments;
 
@@ -32,21 +32,11 @@ namespace AvoidATicket
         // Arguments (Facebook login)
         private Profile facebookProfile;
 
-        public void OnMapReady(GoogleMap googleMap)
-        {
-            MarkerOptions markerOptions = new MarkerOptions();
-            markerOptions.SetPosition(new LatLng(16.03, 108));
-            markerOptions.SetTitle("My Position");
-            googleMap.AddMarker(markerOptions);
-
-            
-        }
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.templayout);
+            SetContentView(Resource.Layout.activity_mainscreen);
             // Create your application here
 
             ProfilePictureView profile_picture = FindViewById<ProfilePictureView>(Resource.Id.profile_image);
@@ -67,14 +57,32 @@ namespace AvoidATicket
             {
                 Intent intent = new Intent(this, typeof(MapActivity));
                 StartActivity(intent);
-            }; 
+            };
+
+            Button place_marker = FindViewById<Button>(Resource.Id.map_edit);
+            place_marker.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(MapActivity));
+                intent.PutExtra("allowMarkerPlacing", true);
+                StartActivityForResult(intent, 1);
+            };
 
             Button log_off = FindViewById<Button>(Resource.Id.log_off_button);
             log_off.Click += delegate
             {
-                LoginManager.Instance.LogOut();
-                Finish();
+                if (login_type.Equals("Facebook"))
+                {
+                    LoginManager.Instance.LogOut();
+                    Finish();
+                }               
             };
+        }
+
+        protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            
         }
     }
 }
