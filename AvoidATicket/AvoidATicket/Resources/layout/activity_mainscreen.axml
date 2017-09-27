@@ -47,4 +47,9 @@
             android:layout_weight="1"
             android:text="Put marker" />
     </LinearLayout>
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/clear"
+        android:text="Clear markers"/>
 </LinearLayout>

@@ -123,9 +123,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationDatabaseHelper.cs" />
     <Compile Include="MainScreenActivity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MapActivity.cs" />
+    <Compile Include="MapMarkerContract.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

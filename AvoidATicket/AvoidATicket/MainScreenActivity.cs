@@ -76,6 +76,13 @@ namespace AvoidATicket
                     Finish();
                 }               
             };
+
+            Button clear = FindViewById<Button>(Resource.Id.clear);
+            clear.Click += delegate
+            {
+                ApplicationDatabaseHelper dbHelper = new ApplicationDatabaseHelper(this);
+                dbHelper.ClearAllMarkers();
+            };
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)

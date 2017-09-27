@@ -12,6 +12,7 @@ using Android.Widget;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using static Android.Gms.Maps.GoogleMap;
+using Android.Database.Sqlite;
 
 namespace AvoidATicket
 {
@@ -28,6 +29,9 @@ namespace AvoidATicket
                 MarkerOptions options = new MarkerOptions();
                 options.SetPosition(point);
                 map.AddMarker(options);
+
+                ApplicationDatabaseHelper dbHelper = new ApplicationDatabaseHelper(this);
+                dbHelper.Savemarker(point.Latitude, point.Longitude);
             }
             
         }
@@ -54,6 +58,16 @@ namespace AvoidATicket
 
             googleMap.MoveCamera(cameraUpdate);
             googleMap.MoveCamera(CameraUpdateFactory.ZoomTo(14));
+
+            ApplicationDatabaseHelper dbHelper = new ApplicationDatabaseHelper(this);
+            List<LatLng> markerList = dbHelper.RetrieveMarkerList();
+
+            foreach (LatLng value in markerList)
+            {
+                MarkerOptions marker = new MarkerOptions();
+                marker.SetPosition(value);
+                map.AddMarker(marker);
+            }
 
         }
 
