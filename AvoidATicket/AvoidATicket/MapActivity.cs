@@ -34,8 +34,27 @@ namespace AvoidATicket
 
         public void OnMapReady(GoogleMap googleMap)
         {
-            googleMap.SetOnMapClickListener(this);
             map = googleMap;
+            googleMap.SetOnMapClickListener(this);
+
+            MarkerOptions markerOptions = new MarkerOptions();
+            markerOptions.SetPosition(new LatLng(54.674836, 25.273971));
+            markerOptions.SetTitle("My Position");
+            googleMap.AddMarker(markerOptions);
+
+            googleMap.UiSettings.ZoomControlsEnabled = true;
+            googleMap.UiSettings.CompassEnabled = true;
+            googleMap.UiSettings.MyLocationButtonEnabled = true;
+            //googleMap.MoveCamera(CameraUpdateFactory.ZoomIn());
+
+            CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
+            builder.Target(new LatLng(54.674836, 25.273971));
+            CameraPosition position = builder.Build();
+            CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition(position);
+
+            googleMap.MoveCamera(cameraUpdate);
+            googleMap.MoveCamera(CameraUpdateFactory.ZoomTo(14));
+
         }
 
         protected override void OnCreate(Bundle savedInstanceState)
