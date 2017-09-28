@@ -13,6 +13,8 @@ using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using static Android.Gms.Maps.GoogleMap;
 using Android.Database.Sqlite;
+using Plugin.Geolocator;
+using Android.Locations;
 
 namespace AvoidATicket
 {
@@ -21,6 +23,9 @@ namespace AvoidATicket
     {
         private GoogleMap map;
         private bool allowMarkerPlacing;
+
+        private double latitude = 54.674836;   // stock location:
+        private double longitude = 25.273971;  //  MIF Saltiniai
 
         public void OnMapClick(LatLng point)
         {
@@ -33,7 +38,6 @@ namespace AvoidATicket
                 ApplicationDatabaseHelper dbHelper = new ApplicationDatabaseHelper(this);
                 dbHelper.Savemarker(point.Latitude, point.Longitude);
             }
-            
         }
 
         public void OnMapReady(GoogleMap googleMap)
@@ -41,23 +45,26 @@ namespace AvoidATicket
             map = googleMap;
             googleMap.SetOnMapClickListener(this);
 
+            LatLng coordinates = new LatLng(latitude, longitude);
             MarkerOptions markerOptions = new MarkerOptions();
-            markerOptions.SetPosition(new LatLng(54.674836, 25.273971));
-            markerOptions.SetTitle("My Position");
+
+            //your location marker
+            markerOptions.SetPosition(coordinates);
+            markerOptions.SetTitle("My Location");
+            markerOptions.SetSnippet("You are here");
             googleMap.AddMarker(markerOptions);
 
             googleMap.UiSettings.ZoomControlsEnabled = true;
             googleMap.UiSettings.CompassEnabled = true;
             googleMap.UiSettings.MyLocationButtonEnabled = true;
-            //googleMap.MoveCamera(CameraUpdateFactory.ZoomIn());
 
+            //move & zoom camera to your location
             CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
-            builder.Target(new LatLng(54.674836, 25.273971));
+            builder.Target(coordinates);
             CameraPosition position = builder.Build();
-            CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition(position);
+            CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(coordinates, 16);
+            googleMap.MoveCamera(camera);
 
-            googleMap.MoveCamera(cameraUpdate);
-            googleMap.MoveCamera(CameraUpdateFactory.ZoomTo(14));
 
             ApplicationDatabaseHelper dbHelper = new ApplicationDatabaseHelper(this);
             List<LatLng> markerList = dbHelper.RetrieveMarkerList();
@@ -71,6 +78,7 @@ namespace AvoidATicket
 
         }
 
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -83,5 +91,6 @@ namespace AvoidATicket
 
             // Create your application here
         }
+
     }
 }
