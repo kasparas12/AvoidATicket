@@ -102,6 +102,8 @@ class MonoPackageManager_Resources {
 		"Bolts.AppLinks.dll",
 		"Bolts.Tasks.dll",
 		"ExoPlayer.dll",
+		"Google.Apis.Core.dll",
+		"Newtonsoft.Json.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Geolocator.Abstractions.dll",
 		"Plugin.Geolocator.dll",

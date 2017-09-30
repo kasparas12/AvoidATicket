@@ -13,19 +13,18 @@ using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using static Android.Gms.Maps.GoogleMap;
 using Android.Database.Sqlite;
-using Plugin.Geolocator;
 using Android.Locations;
 
 namespace AvoidATicket
 {
     [Activity(Label = "MapActivity")]
-    public class MapActivity : Activity, IOnMapReadyCallback, IOnMapClickListener
+    public class MapActivity : Activity, IOnMapReadyCallback, IOnMapClickListener, ILocationListener
     {
         private GoogleMap map;
         private bool allowMarkerPlacing;
 
-        private double latitude = 54.674836;   // stock location:
-        private double longitude = 25.273971;  //  MIF Saltiniai
+        LocationManager locationManager;
+        String provider;
 
         public void OnMapClick(LatLng point)
         {
@@ -44,27 +43,9 @@ namespace AvoidATicket
         {
             map = googleMap;
             googleMap.SetOnMapClickListener(this);
-
-            LatLng coordinates = new LatLng(latitude, longitude);
-            MarkerOptions markerOptions = new MarkerOptions();
-
-            //your location marker
-            markerOptions.SetPosition(coordinates);
-            markerOptions.SetTitle("My Location");
-            markerOptions.SetSnippet("You are here");
-            googleMap.AddMarker(markerOptions);
-
             googleMap.UiSettings.ZoomControlsEnabled = true;
             googleMap.UiSettings.CompassEnabled = true;
             googleMap.UiSettings.MyLocationButtonEnabled = true;
-
-            //move & zoom camera to your location
-            CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
-            builder.Target(coordinates);
-            CameraPosition position = builder.Build();
-            CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(coordinates, 16);
-            googleMap.MoveCamera(camera);
-
 
             ApplicationDatabaseHelper dbHelper = new ApplicationDatabaseHelper(this);
             List<LatLng> markerList = dbHelper.RetrieveMarkerList();
@@ -75,7 +56,6 @@ namespace AvoidATicket
                 marker.SetPosition(value);
                 map.AddMarker(marker);
             }
-
         }
 
 
@@ -86,11 +66,65 @@ namespace AvoidATicket
 
             allowMarkerPlacing = Intent.GetBooleanExtra("allowMarkerPlacing", false);
 
+            locationManager = (LocationManager)GetSystemService(Context.LocationService);
+            provider = locationManager.GetBestProvider(new Criteria(), false);
+
+            Location location = locationManager.GetLastKnownLocation(provider);
+            if(location == null)
+            {
+                System.Diagnostics.Debug.WriteLine("Cant find your location");
+            }
+
             MapFragment mapFragment = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
             mapFragment.GetMapAsync(this); 
 
-            // Create your application here
+        }
+        // zemiau 6 GPS tracking metodai
+        protected override void OnResume()
+        {
+            base.OnResume();
+            locationManager.RequestLocationUpdates(provider, 2000, 50, this);
         }
 
+        protected override void OnPause()
+        {
+            base.OnPause();
+            locationManager.RemoveUpdates(this);
+        }
+
+        void ILocationListener.OnLocationChanged(Location location)
+        {
+            double lat, lng;
+            lat = location.Latitude;
+            lng = location.Longitude;
+
+            LatLng coordinates = new LatLng(lat, lng);
+            MarkerOptions markerOptions = new MarkerOptions();
+            markerOptions.SetPosition(new LatLng(lat, lng));
+            markerOptions.SetTitle("My Location");
+            markerOptions.SetSnippet("You are here");
+            map.AddMarker(markerOptions);
+
+            CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
+            builder.Target(new LatLng(lat , lng));
+            CameraPosition position = builder.Build();
+            CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(coordinates, 16);
+            map.MoveCamera(camera);
+        }
+
+        void ILocationListener.OnProviderDisabled(string provider)
+        {
+            //throw new NotImplementedException();
+        }
+
+        void ILocationListener.OnProviderEnabled(string provider)
+        {
+            //throw new NotImplementedException();
+        }
+
+        void ILocationListener.OnStatusChanged(string provider, Availability status, Bundle extras)
+        {
+            //throw new NotImplementedException();
+        }
     }
 }

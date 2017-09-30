@@ -238,7 +238,6 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Xamarin.GooglePlayServices.Maps.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\ExoPlayer.dll.mdb
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\AvoidATicket.csprojResolveAssemblyReference.cache
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\XbdMerge\Xamarin.Android.Support.Annotations.dll.stamp
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\XbdMerge\Xamarin.Android.Support.Compat.dll.stamp
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\XbdMerge\Xamarin.Android.Support.Core.UI.dll.stamp
@@ -278,6 +277,11 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Plugin.Permissions.Abstractions.xml
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Plugin.Geolocator.dll.mdb
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Plugin.Permissions.dll.mdb
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Google.Apis.Core.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Google.Apis.Core.xml
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\AvoidATicket.csprojResolveAssemblyReference.cache
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.dll.mdb
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\AvoidATicket.dll.mdb
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\ExoPlayer.dll.mdb
