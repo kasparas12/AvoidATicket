@@ -20,7 +20,7 @@ public class GeolocationSingleListener
 	}
 
 
-	public GeolocationSingleListener () throws java.lang.Throwable
+	public GeolocationSingleListener ()
 	{
 		super ();
 		if (getClass () == GeolocationSingleListener.class)

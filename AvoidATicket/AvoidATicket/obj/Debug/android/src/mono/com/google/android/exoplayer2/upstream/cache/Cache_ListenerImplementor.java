@@ -19,7 +19,7 @@ public class Cache_ListenerImplementor
 	}
 
 
-	public Cache_ListenerImplementor () throws java.lang.Throwable
+	public Cache_ListenerImplementor ()
 	{
 		super ();
 		if (getClass () == Cache_ListenerImplementor.class)

@@ -22,7 +22,7 @@ public class AdaptiveMediaSourceEventListenerImplementor
 	}
 
 
-	public AdaptiveMediaSourceEventListenerImplementor () throws java.lang.Throwable
+	public AdaptiveMediaSourceEventListenerImplementor ()
 	{
 		super ();
 		if (getClass () == AdaptiveMediaSourceEventListenerImplementor.class)

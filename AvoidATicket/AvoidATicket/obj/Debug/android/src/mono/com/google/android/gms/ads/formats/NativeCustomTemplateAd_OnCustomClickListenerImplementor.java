@@ -17,7 +17,7 @@ public class NativeCustomTemplateAd_OnCustomClickListenerImplementor
 	}
 
 
-	public NativeCustomTemplateAd_OnCustomClickListenerImplementor () throws java.lang.Throwable
+	public NativeCustomTemplateAd_OnCustomClickListenerImplementor ()
 	{
 		super ();
 		if (getClass () == NativeCustomTemplateAd_OnCustomClickListenerImplementor.class)

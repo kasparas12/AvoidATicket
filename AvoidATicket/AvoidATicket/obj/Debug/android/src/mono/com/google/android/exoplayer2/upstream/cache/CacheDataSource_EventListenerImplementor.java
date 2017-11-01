@@ -17,7 +17,7 @@ public class CacheDataSource_EventListenerImplementor
 	}
 
 
-	public CacheDataSource_EventListenerImplementor () throws java.lang.Throwable
+	public CacheDataSource_EventListenerImplementor ()
 	{
 		super ();
 		if (getClass () == CacheDataSource_EventListenerImplementor.class)

@@ -21,7 +21,7 @@ public class LoginActivity
 	}
 
 
-	public LoginActivity () throws java.lang.Throwable
+	public LoginActivity ()
 	{
 		super ();
 		if (getClass () == LoginActivity.class)
