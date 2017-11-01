@@ -24,7 +24,7 @@ public class MediaViewListenerImplementor
 	}
 
 
-	public MediaViewListenerImplementor () throws java.lang.Throwable
+	public MediaViewListenerImplementor ()
 	{
 		super ();
 		if (getClass () == MediaViewListenerImplementor.class)

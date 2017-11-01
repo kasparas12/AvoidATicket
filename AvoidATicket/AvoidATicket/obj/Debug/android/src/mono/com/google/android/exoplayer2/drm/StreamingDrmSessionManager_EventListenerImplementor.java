@@ -18,7 +18,7 @@ public class StreamingDrmSessionManager_EventListenerImplementor
 	}
 
 
-	public StreamingDrmSessionManager_EventListenerImplementor () throws java.lang.Throwable
+	public StreamingDrmSessionManager_EventListenerImplementor ()
 	{
 		super ();
 		if (getClass () == StreamingDrmSessionManager_EventListenerImplementor.class)

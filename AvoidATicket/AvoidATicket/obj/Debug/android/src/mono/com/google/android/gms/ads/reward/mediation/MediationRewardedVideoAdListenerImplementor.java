@@ -26,7 +26,7 @@ public class MediationRewardedVideoAdListenerImplementor
 	}
 
 
-	public MediationRewardedVideoAdListenerImplementor () throws java.lang.Throwable
+	public MediationRewardedVideoAdListenerImplementor ()
 	{
 		super ();
 		if (getClass () == MediationRewardedVideoAdListenerImplementor.class)

@@ -17,7 +17,7 @@ public class NativeContentAd_OnContentAdLoadedListenerImplementor
 	}
 
 
-	public NativeContentAd_OnContentAdLoadedListenerImplementor () throws java.lang.Throwable
+	public NativeContentAd_OnContentAdLoadedListenerImplementor ()
 	{
 		super ();
 		if (getClass () == NativeContentAd_OnContentAdLoadedListenerImplementor.class)

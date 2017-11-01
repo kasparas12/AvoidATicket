@@ -23,7 +23,7 @@ public class VideoRendererEventListenerImplementor
 	}
 
 
-	public VideoRendererEventListenerImplementor () throws java.lang.Throwable
+	public VideoRendererEventListenerImplementor ()
 	{
 		super ();
 		if (getClass () == VideoRendererEventListenerImplementor.class)

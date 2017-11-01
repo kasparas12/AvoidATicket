@@ -69,6 +69,16 @@ namespace AvoidATicket
             locationManager = (LocationManager)GetSystemService(Context.LocationService);
             provider = locationManager.GetBestProvider(new Criteria(), false);
 
+            /*if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
+            {
+               // Toast.makeText(this, "GPS is Enabled in your devide", Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                //showGPSDisabledAlertToUser();
+            }*/
+
+
             Location location = locationManager.GetLastKnownLocation(provider);
             if(location == null)
             {
@@ -76,9 +86,10 @@ namespace AvoidATicket
             }
 
             MapFragment mapFragment = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
-            mapFragment.GetMapAsync(this); 
+            mapFragment.GetMapAsync(this);
 
         }
+
         // zemiau 6 GPS tracking metodai
         protected override void OnResume()
         {
@@ -114,7 +125,9 @@ namespace AvoidATicket
 
         void ILocationListener.OnProviderDisabled(string provider)
         {
-            //throw new NotImplementedException();
+            System.Diagnostics.Debug.WriteLine("Lops ijunk GPS");
+            Toast aToast = Toast.MakeText(this, "Please turn on GPS services so the app can find your location", ToastLength.Long);
+            aToast.Show();
         }
 
         void ILocationListener.OnProviderEnabled(string provider)
@@ -126,5 +139,6 @@ namespace AvoidATicket
         {
             //throw new NotImplementedException();
         }
+
     }
 }
