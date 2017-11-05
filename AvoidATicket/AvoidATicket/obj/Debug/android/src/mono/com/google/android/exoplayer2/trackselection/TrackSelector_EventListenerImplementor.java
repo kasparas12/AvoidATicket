@@ -17,7 +17,7 @@ public class TrackSelector_EventListenerImplementor
 	}
 
 
-	public TrackSelector_EventListenerImplementor ()
+	public TrackSelector_EventListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == TrackSelector_EventListenerImplementor.class)

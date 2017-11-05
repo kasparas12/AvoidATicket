@@ -17,7 +17,7 @@ public class AppEventListenerImplementor
 	}
 
 
-	public AppEventListenerImplementor ()
+	public AppEventListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == AppEventListenerImplementor.class)

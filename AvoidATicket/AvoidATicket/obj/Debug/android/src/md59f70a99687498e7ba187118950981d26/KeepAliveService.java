@@ -16,7 +16,7 @@ public class KeepAliveService
 	}
 
 
-	public KeepAliveService ()
+	public KeepAliveService () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == KeepAliveService.class)

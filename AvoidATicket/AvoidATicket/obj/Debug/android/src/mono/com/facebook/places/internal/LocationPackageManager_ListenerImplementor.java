@@ -17,7 +17,7 @@ public class LocationPackageManager_ListenerImplementor
 	}
 
 
-	public LocationPackageManager_ListenerImplementor ()
+	public LocationPackageManager_ListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == LocationPackageManager_ListenerImplementor.class)

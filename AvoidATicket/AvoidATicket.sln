@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvoidATicket", "AvoidATicket\AvoidATicket.csproj", "{D124DDAA-FB84-4464-8843-CC917B8C0A9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTClient", "RESTClient\RESTClient.csproj", "{542F1754-1428-43A8-A59F-1F7A1B6AEF3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{D124DDAA-FB84-4464-8843-CC917B8C0A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D124DDAA-FB84-4464-8843-CC917B8C0A9F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D124DDAA-FB84-4464-8843-CC917B8C0A9F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{542F1754-1428-43A8-A59F-1F7A1B6AEF3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542F1754-1428-43A8-A59F-1F7A1B6AEF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542F1754-1428-43A8-A59F-1F7A1B6AEF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542F1754-1428-43A8-A59F-1F7A1B6AEF3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

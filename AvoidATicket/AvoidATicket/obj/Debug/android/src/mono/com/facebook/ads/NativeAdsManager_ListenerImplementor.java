@@ -18,7 +18,7 @@ public class NativeAdsManager_ListenerImplementor
 	}
 
 
-	public NativeAdsManager_ListenerImplementor ()
+	public NativeAdsManager_ListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == NativeAdsManager_ListenerImplementor.class)

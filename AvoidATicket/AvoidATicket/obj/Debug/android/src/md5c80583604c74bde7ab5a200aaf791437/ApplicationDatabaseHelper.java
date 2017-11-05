@@ -17,7 +17,7 @@ public class ApplicationDatabaseHelper
 	}
 
 
-	public ApplicationDatabaseHelper (android.content.Context p0, java.lang.String p1, android.database.sqlite.SQLiteDatabase.CursorFactory p2, int p3)
+	public ApplicationDatabaseHelper (android.content.Context p0, java.lang.String p1, android.database.sqlite.SQLiteDatabase.CursorFactory p2, int p3) throws java.lang.Throwable
 	{
 		super (p0, p1, p2, p3);
 		if (getClass () == ApplicationDatabaseHelper.class)
@@ -25,7 +25,7 @@ public class ApplicationDatabaseHelper
 	}
 
 
-	public ApplicationDatabaseHelper (android.content.Context p0, java.lang.String p1, android.database.sqlite.SQLiteDatabase.CursorFactory p2, int p3, android.database.DatabaseErrorHandler p4)
+	public ApplicationDatabaseHelper (android.content.Context p0, java.lang.String p1, android.database.sqlite.SQLiteDatabase.CursorFactory p2, int p3, android.database.DatabaseErrorHandler p4) throws java.lang.Throwable
 	{
 		super (p0, p1, p2, p3, p4);
 		if (getClass () == ApplicationDatabaseHelper.class)

@@ -17,7 +17,7 @@ public class AudioCapabilitiesReceiver_ListenerImplementor
 	}
 
 
-	public AudioCapabilitiesReceiver_ListenerImplementor ()
+	public AudioCapabilitiesReceiver_ListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == AudioCapabilitiesReceiver_ListenerImplementor.class)

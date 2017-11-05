@@ -19,7 +19,7 @@ public class SimpleExoPlayer_VideoListenerImplementor
 	}
 
 
-	public SimpleExoPlayer_VideoListenerImplementor ()
+	public SimpleExoPlayer_VideoListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == SimpleExoPlayer_VideoListenerImplementor.class)

@@ -22,7 +22,7 @@ public class MediationNativeListenerImplementor
 	}
 
 
-	public MediationNativeListenerImplementor ()
+	public MediationNativeListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == MediationNativeListenerImplementor.class)

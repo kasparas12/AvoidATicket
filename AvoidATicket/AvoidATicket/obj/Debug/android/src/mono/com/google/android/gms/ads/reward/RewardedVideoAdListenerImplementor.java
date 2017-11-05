@@ -23,7 +23,7 @@ public class RewardedVideoAdListenerImplementor
 	}
 
 
-	public RewardedVideoAdListenerImplementor ()
+	public RewardedVideoAdListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == RewardedVideoAdListenerImplementor.class)

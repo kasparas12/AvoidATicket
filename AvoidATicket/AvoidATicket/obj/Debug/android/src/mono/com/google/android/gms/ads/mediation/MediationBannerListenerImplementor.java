@@ -22,7 +22,7 @@ public class MediationBannerListenerImplementor
 	}
 
 
-	public MediationBannerListenerImplementor ()
+	public MediationBannerListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == MediationBannerListenerImplementor.class)

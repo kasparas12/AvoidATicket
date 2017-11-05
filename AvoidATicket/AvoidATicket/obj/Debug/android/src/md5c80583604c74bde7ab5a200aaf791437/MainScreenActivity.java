@@ -17,7 +17,7 @@ public class MainScreenActivity
 	}
 
 
-	public MainScreenActivity ()
+	public MainScreenActivity () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == MainScreenActivity.class)

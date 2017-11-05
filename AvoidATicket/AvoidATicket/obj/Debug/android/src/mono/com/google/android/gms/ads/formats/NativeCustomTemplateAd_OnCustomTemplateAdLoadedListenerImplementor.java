@@ -17,7 +17,7 @@ public class NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor
 	}
 
 
-	public NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor ()
+	public NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor.class)

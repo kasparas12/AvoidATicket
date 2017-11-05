@@ -18,7 +18,7 @@ public class PlayStorePurchaseListenerImplementor
 	}
 
 
-	public PlayStorePurchaseListenerImplementor ()
+	public PlayStorePurchaseListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == PlayStorePurchaseListenerImplementor.class)

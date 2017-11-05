@@ -17,7 +17,7 @@ public class PlaybackControlView_VisibilityListenerImplementor
 	}
 
 
-	public PlaybackControlView_VisibilityListenerImplementor ()
+	public PlaybackControlView_VisibilityListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == PlaybackControlView_VisibilityListenerImplementor.class)

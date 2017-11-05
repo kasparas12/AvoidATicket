@@ -17,7 +17,7 @@ public class PlatformServiceClient_CompletedListenerImplementor
 	}
 
 
-	public PlatformServiceClient_CompletedListenerImplementor ()
+	public PlatformServiceClient_CompletedListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == PlatformServiceClient_CompletedListenerImplementor.class)

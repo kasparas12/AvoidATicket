@@ -14,6 +14,11 @@ using Android.Gms.Maps.Model;
 using static Android.Gms.Maps.GoogleMap;
 using Android.Database.Sqlite;
 using Android.Locations;
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Net.Http.Headers;
+using RESTClient;
+using System.Threading.Tasks;
 
 namespace AvoidATicket
 {
@@ -34,12 +39,17 @@ namespace AvoidATicket
                 options.SetPosition(point);
                 map.AddMarker(options);
 
-                ApplicationDatabaseHelper dbHelper = new ApplicationDatabaseHelper(this);
-                dbHelper.Savemarker(point.Latitude, point.Longitude);
+                DBAccess access = new DBAccess();
+                access.SaveMarker(new RESTClient.Marker()
+                {
+                    Latitude = point.Latitude,
+                    Longtitude = point.Longitude,
+                    MarkingTime = DateTime.UtcNow
+                });
             }
         }
 
-        public void OnMapReady(GoogleMap googleMap)
+        public async void OnMapReady(GoogleMap googleMap)
         {
             map = googleMap;
             googleMap.SetOnMapClickListener(this);
@@ -47,14 +57,14 @@ namespace AvoidATicket
             googleMap.UiSettings.CompassEnabled = true;
             googleMap.UiSettings.MyLocationButtonEnabled = true;
 
-            ApplicationDatabaseHelper dbHelper = new ApplicationDatabaseHelper(this);
-            List<LatLng> markerList = dbHelper.RetrieveMarkerList();
+            DBAccess access = new DBAccess();
+            List<RESTClient.Marker> markers = await access.RetrieveMarkerList();
 
-            foreach (LatLng value in markerList)
+            foreach (RESTClient.Marker marker in markers)
             {
-                MarkerOptions marker = new MarkerOptions();
-                marker.SetPosition(value);
-                map.AddMarker(marker);
+                MarkerOptions options = new MarkerOptions();
+                options.SetPosition(new LatLng(marker.Latitude, marker.Longtitude));
+                googleMap.AddMarker(options);
             }
         }
 

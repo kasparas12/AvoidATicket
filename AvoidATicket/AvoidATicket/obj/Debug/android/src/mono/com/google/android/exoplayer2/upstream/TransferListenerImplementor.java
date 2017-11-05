@@ -19,7 +19,7 @@ public class TransferListenerImplementor
 	}
 
 
-	public TransferListenerImplementor ()
+	public TransferListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == TransferListenerImplementor.class)

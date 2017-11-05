@@ -17,7 +17,7 @@ public class MediaSource_ListenerImplementor
 	}
 
 
-	public MediaSource_ListenerImplementor ()
+	public MediaSource_ListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == MediaSource_ListenerImplementor.class)

@@ -17,7 +17,7 @@ public class CustomTabsClient_CustomTabsCallbackImpl
 	}
 
 
-	public CustomTabsClient_CustomTabsCallbackImpl ()
+	public CustomTabsClient_CustomTabsCallbackImpl () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == CustomTabsClient_CustomTabsCallbackImpl.class)

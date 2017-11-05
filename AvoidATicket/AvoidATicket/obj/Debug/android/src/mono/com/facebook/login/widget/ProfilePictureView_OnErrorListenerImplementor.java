@@ -17,7 +17,7 @@ public class ProfilePictureView_OnErrorListenerImplementor
 	}
 
 
-	public ProfilePictureView_OnErrorListenerImplementor ()
+	public ProfilePictureView_OnErrorListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == ProfilePictureView_OnErrorListenerImplementor.class)

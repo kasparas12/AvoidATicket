@@ -22,7 +22,7 @@ public class AudioRendererEventListenerImplementor
 	}
 
 
-	public AudioRendererEventListenerImplementor ()
+	public AudioRendererEventListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == AudioRendererEventListenerImplementor.class)

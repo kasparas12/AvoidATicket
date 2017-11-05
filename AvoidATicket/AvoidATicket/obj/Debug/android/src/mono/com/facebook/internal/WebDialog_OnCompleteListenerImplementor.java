@@ -17,7 +17,7 @@ public class WebDialog_OnCompleteListenerImplementor
 	}
 
 
-	public WebDialog_OnCompleteListenerImplementor ()
+	public WebDialog_OnCompleteListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == WebDialog_OnCompleteListenerImplementor.class)

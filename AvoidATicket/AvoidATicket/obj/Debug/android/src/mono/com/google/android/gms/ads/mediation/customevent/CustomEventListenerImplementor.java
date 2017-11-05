@@ -21,7 +21,7 @@ public class CustomEventListenerImplementor
 	}
 
 
-	public CustomEventListenerImplementor ()
+	public CustomEventListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == CustomEventListenerImplementor.class)

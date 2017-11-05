@@ -17,7 +17,7 @@ public class NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor
 	}
 
 
-	public NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor ()
+	public NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor.class)

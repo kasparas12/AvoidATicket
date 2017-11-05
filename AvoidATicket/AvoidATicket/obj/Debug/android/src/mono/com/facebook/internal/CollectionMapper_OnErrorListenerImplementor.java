@@ -17,7 +17,7 @@ public class CollectionMapper_OnErrorListenerImplementor
 	}
 
 
-	public CollectionMapper_OnErrorListenerImplementor ()
+	public CollectionMapper_OnErrorListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == CollectionMapper_OnErrorListenerImplementor.class)

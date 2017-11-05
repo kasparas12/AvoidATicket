@@ -17,7 +17,7 @@ public class SingleSampleMediaSource_EventListenerImplementor
 	}
 
 
-	public SingleSampleMediaSource_EventListenerImplementor ()
+	public SingleSampleMediaSource_EventListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == SingleSampleMediaSource_EventListenerImplementor.class)

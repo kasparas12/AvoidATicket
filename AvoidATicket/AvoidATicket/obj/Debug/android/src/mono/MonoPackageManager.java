@@ -38,13 +38,6 @@ public class MonoPackageManager {
 				String cacheDir     = context.getCacheDir ().getAbsolutePath ();
 				String dataDir      = getNativeLibraryPath (context);
 				ClassLoader loader  = context.getClassLoader ();
-				java.io.File external0 = android.os.Environment.getExternalStorageDirectory ();
-				String externalDir = new java.io.File (
-							external0,
-							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath ();
-				String externalLegacyDir = new java.io.File (
-							external0,
-							"../legacy/Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath ();
 
 				Runtime.init (
 						language,
@@ -56,10 +49,9 @@ public class MonoPackageManager {
 							dataDir,
 						},
 						loader,
-						new String[] {
-							externalDir,
-							externalLegacyDir
-						},
+						new java.io.File (
+							android.os.Environment.getExternalStorageDirectory (),
+							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath (),
 						MonoPackageManager_Resources.Assemblies,
 						context.getPackageName ());
 				
@@ -111,12 +103,35 @@ class MonoPackageManager_Resources {
 		"Bolts.Tasks.dll",
 		"ExoPlayer.dll",
 		"Google.Apis.Core.dll",
+		"Microsoft.Data.Sqlite.dll",
+		"Microsoft.EntityFrameworkCore.dll",
+		"Microsoft.EntityFrameworkCore.Relational.dll",
+		"Microsoft.EntityFrameworkCore.Sqlite.dll",
+		"Microsoft.Extensions.Caching.Abstractions.dll",
+		"Microsoft.Extensions.Caching.Memory.dll",
+		"Microsoft.Extensions.Configuration.Abstractions.dll",
+		"Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+		"Microsoft.Extensions.DependencyInjection.dll",
+		"Microsoft.Extensions.Logging.Abstractions.dll",
+		"Microsoft.Extensions.Logging.dll",
+		"Microsoft.Extensions.Options.dll",
+		"Microsoft.Extensions.Primitives.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Geolocator.Abstractions.dll",
 		"Plugin.Geolocator.dll",
 		"Plugin.Permissions.Abstractions.dll",
 		"Plugin.Permissions.dll",
+		"Remotion.Linq.dll",
+		"SQLitePCLRaw.batteries_green.dll",
+		"SQLitePCLRaw.batteries_v2.dll",
+		"SQLitePCLRaw.core.dll",
+		"SQLitePCLRaw.lib.e_sqlite3.dll",
+		"SQLitePCLRaw.provider.e_sqlite3.dll",
+		"System.Collections.Immutable.dll",
+		"System.Diagnostics.DiagnosticSource.dll",
+		"System.Interactive.Async.dll",
+		"System.Runtime.CompilerServices.Unsafe.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Annotations.dll",
 		"Xamarin.Android.Support.Compat.dll",
@@ -136,6 +151,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Base.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
 		"Xamarin.GooglePlayServices.Maps.dll",
+		"RESTClient.dll",
+		"RestSharp.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

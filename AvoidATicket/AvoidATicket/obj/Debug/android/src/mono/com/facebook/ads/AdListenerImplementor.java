@@ -20,7 +20,7 @@ public class AdListenerImplementor
 	}
 
 
-	public AdListenerImplementor ()
+	public AdListenerImplementor () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == AdListenerImplementor.class)

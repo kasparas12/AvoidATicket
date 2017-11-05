@@ -17,7 +17,7 @@ public class CustomTabsServiceConnectionImpl
 	}
 
 
-	public CustomTabsServiceConnectionImpl ()
+	public CustomTabsServiceConnectionImpl () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == CustomTabsServiceConnectionImpl.class)
