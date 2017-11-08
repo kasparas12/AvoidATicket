@@ -17,7 +17,7 @@ public class ExoMediaDrm_OnEventListenerImplementor
 	}
 
 
-	public ExoMediaDrm_OnEventListenerImplementor () throws java.lang.Throwable
+	public ExoMediaDrm_OnEventListenerImplementor ()
 	{
 		super ();
 		if (getClass () == ExoMediaDrm_OnEventListenerImplementor.class)

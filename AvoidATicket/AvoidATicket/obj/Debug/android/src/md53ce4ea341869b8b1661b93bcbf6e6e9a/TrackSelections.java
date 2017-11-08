@@ -15,7 +15,7 @@ public class TrackSelections
 	}
 
 
-	public TrackSelections () throws java.lang.Throwable
+	public TrackSelections ()
 	{
 		super ();
 		if (getClass () == TrackSelections.class)

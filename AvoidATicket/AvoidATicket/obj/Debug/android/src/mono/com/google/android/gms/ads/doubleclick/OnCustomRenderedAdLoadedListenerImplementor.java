@@ -17,7 +17,7 @@ public class OnCustomRenderedAdLoadedListenerImplementor
 	}
 
 
-	public OnCustomRenderedAdLoadedListenerImplementor () throws java.lang.Throwable
+	public OnCustomRenderedAdLoadedListenerImplementor ()
 	{
 		super ();
 		if (getClass () == OnCustomRenderedAdLoadedListenerImplementor.class)

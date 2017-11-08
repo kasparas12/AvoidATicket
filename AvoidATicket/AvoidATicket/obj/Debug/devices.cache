@@ -4,8 +4,4 @@
     <ResultingAbi>arm64-v8a</ResultingAbi>
     <SdkVersion>23</SdkVersion>
   </Device>
-  <Device id="8fd59487">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
 </Devices>

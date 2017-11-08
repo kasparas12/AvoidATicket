@@ -17,7 +17,7 @@ public class ExtractorMediaSource_EventListenerImplementor
 	}
 
 
-	public ExtractorMediaSource_EventListenerImplementor () throws java.lang.Throwable
+	public ExtractorMediaSource_EventListenerImplementor ()
 	{
 		super ();
 		if (getClass () == ExtractorMediaSource_EventListenerImplementor.class)

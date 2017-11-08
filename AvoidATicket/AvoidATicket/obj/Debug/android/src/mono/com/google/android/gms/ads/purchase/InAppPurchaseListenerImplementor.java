@@ -17,7 +17,7 @@ public class InAppPurchaseListenerImplementor
 	}
 
 
-	public InAppPurchaseListenerImplementor () throws java.lang.Throwable
+	public InAppPurchaseListenerImplementor ()
 	{
 		super ();
 		if (getClass () == InAppPurchaseListenerImplementor.class)

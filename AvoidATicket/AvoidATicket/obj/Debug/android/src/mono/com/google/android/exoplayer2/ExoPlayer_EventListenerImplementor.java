@@ -21,7 +21,7 @@ public class ExoPlayer_EventListenerImplementor
 	}
 
 
-	public ExoPlayer_EventListenerImplementor () throws java.lang.Throwable
+	public ExoPlayer_EventListenerImplementor ()
 	{
 		super ();
 		if (getClass () == ExoPlayer_EventListenerImplementor.class)

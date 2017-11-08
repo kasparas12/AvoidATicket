@@ -22,7 +22,7 @@ public class MediationInterstitialListenerImplementor
 	}
 
 
-	public MediationInterstitialListenerImplementor () throws java.lang.Throwable
+	public MediationInterstitialListenerImplementor ()
 	{
 		super ();
 		if (getClass () == MediationInterstitialListenerImplementor.class)

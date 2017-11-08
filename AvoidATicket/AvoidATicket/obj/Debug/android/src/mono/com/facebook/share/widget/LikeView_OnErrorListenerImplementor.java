@@ -17,7 +17,7 @@ public class LikeView_OnErrorListenerImplementor
 	}
 
 
-	public LikeView_OnErrorListenerImplementor () throws java.lang.Throwable
+	public LikeView_OnErrorListenerImplementor ()
 	{
 		super ();
 		if (getClass () == LikeView_OnErrorListenerImplementor.class)

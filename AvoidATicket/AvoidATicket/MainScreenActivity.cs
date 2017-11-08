@@ -51,7 +51,7 @@ namespace AvoidATicket
                 profile_name.Text = facebookProfile.Name;
             }
 
-                       
+
             Button open_map = FindViewById<Button>(Resource.Id.map_view);
             open_map.Click += delegate
             {
@@ -74,7 +74,7 @@ namespace AvoidATicket
                 {
                     LoginManager.Instance.LogOut();
                     Finish();
-                }               
+                }
             };
 
             Button clear = FindViewById<Button>(Resource.Id.clear);
@@ -83,13 +83,20 @@ namespace AvoidATicket
                 ApplicationDatabaseHelper dbHelper = new ApplicationDatabaseHelper(this);
                 dbHelper.ClearAllMarkers();
             };
+
+            Button faq = FindViewById<Button>(Resource.Id.faq);
+            faq.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(FAQActivity));
+                StartActivity(intent); //
+            };
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
 
-            
+
         }
     }
 }
