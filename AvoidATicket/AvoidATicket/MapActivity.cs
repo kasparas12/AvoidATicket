@@ -30,10 +30,22 @@ namespace AvoidATicket
 
         LocationManager locationManager;
         String provider;
+        Location location;
+
+        private double distance;
+        private const double maximumDistance = 1.5; // in meters
 
         public void OnMapClick(LatLng point)
         {
-            if (allowMarkerPlacing)
+            double lat1 = location.Latitude;
+            double lat2 = point.Latitude;
+            double lng1 = location.Longitude;
+            double lng2 = point.Longitude;
+
+            distance = caculateDistance(lat1, lng1, lat2, lng2, 'K'); // kilometrais.
+            //distance = distance * 1000;     // metrais
+
+            if (allowMarkerPlacing && distance <= maximumDistance)
             {
                 MarkerOptions options = new MarkerOptions();
                 options.SetPosition(point);
@@ -47,6 +59,46 @@ namespace AvoidATicket
                     MarkingTime = DateTime.UtcNow
                 });
             }
+            else if (allowMarkerPlacing && distance > maximumDistance)
+            {
+                Toast aToast = Toast.MakeText(this, "Žymeklius galima dėti ne toliau kaip " + maximumDistance + 
+                    "km. atstumu nuo jūsų buvimo vietos. Bandėte padėti žymeklį " + Math.Round(distance, 2) + 
+                    "km. atstumu.", ToastLength.Long);
+                aToast.Show();
+                System.Diagnostics.Debug.WriteLine("COORD1: " + lat1 + " " + lng1 + "   |   COORD2 " + lat2 + " " + lng2);
+            }
+            else
+            {
+                // map preview option, nereikia nieko rodyti
+            }
+        }
+
+        private double caculateDistance(double lat1, double lon1, double lat2, double lon2, char unit)
+        {
+            double theta = lon1 - lon2;
+            double dist = Math.Sin(deg2rad(lat1)) * Math.Sin(deg2rad(lat2)) + Math.Cos(deg2rad(lat1)) * Math.Cos(deg2rad(lat2)) * Math.Cos(deg2rad(theta));
+            dist = Math.Acos(dist);
+            dist = rad2deg(dist);
+            dist = dist * 60 * 1.1515;
+            if (unit == 'K')
+            {
+                dist = dist * 1.609344;
+            }
+            else if (unit == 'N')
+            {
+                dist = dist * 0.8684;
+            }
+            return (dist); // - 4081.6154411;
+        }
+
+        private double deg2rad(double deg)
+        {
+            return (deg * Math.PI / 180.0);
+        }
+
+        private double rad2deg(double rad)
+        {
+            return (rad / Math.PI * 180.0);
         }
 
         public async void OnMapReady(GoogleMap googleMap)
@@ -89,7 +141,7 @@ namespace AvoidATicket
             }*/
 
 
-            Location location = locationManager.GetLastKnownLocation(provider);
+            location = locationManager.GetLastKnownLocation(provider);
             if(location == null)
             {
                 System.Diagnostics.Debug.WriteLine("Cant find your location");
@@ -149,6 +201,8 @@ namespace AvoidATicket
         {
             //throw new NotImplementedException();
         }
+
+        
 
     }
 }
