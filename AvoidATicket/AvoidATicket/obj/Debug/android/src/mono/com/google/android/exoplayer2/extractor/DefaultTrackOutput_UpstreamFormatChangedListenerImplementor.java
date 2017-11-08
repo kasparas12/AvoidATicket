@@ -17,7 +17,7 @@ public class DefaultTrackOutput_UpstreamFormatChangedListenerImplementor
 	}
 
 
-	public DefaultTrackOutput_UpstreamFormatChangedListenerImplementor () throws java.lang.Throwable
+	public DefaultTrackOutput_UpstreamFormatChangedListenerImplementor ()
 	{
 		super ();
 		if (getClass () == DefaultTrackOutput_UpstreamFormatChangedListenerImplementor.class)

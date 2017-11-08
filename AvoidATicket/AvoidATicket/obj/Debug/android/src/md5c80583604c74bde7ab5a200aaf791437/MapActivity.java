@@ -27,7 +27,7 @@ public class MapActivity
 	}
 
 
-	public MapActivity () throws java.lang.Throwable
+	public MapActivity ()
 	{
 		super ();
 		if (getClass () == MapActivity.class)

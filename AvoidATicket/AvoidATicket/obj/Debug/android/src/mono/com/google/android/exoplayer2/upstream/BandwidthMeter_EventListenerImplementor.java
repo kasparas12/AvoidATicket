@@ -17,7 +17,7 @@ public class BandwidthMeter_EventListenerImplementor
 	}
 
 
-	public BandwidthMeter_EventListenerImplementor () throws java.lang.Throwable
+	public BandwidthMeter_EventListenerImplementor ()
 	{
 		super ();
 		if (getClass () == BandwidthMeter_EventListenerImplementor.class)

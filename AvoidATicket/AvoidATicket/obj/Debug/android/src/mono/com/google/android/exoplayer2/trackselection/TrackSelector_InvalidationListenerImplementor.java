@@ -17,7 +17,7 @@ public class TrackSelector_InvalidationListenerImplementor
 	}
 
 
-	public TrackSelector_InvalidationListenerImplementor () throws java.lang.Throwable
+	public TrackSelector_InvalidationListenerImplementor ()
 	{
 		super ();
 		if (getClass () == TrackSelector_InvalidationListenerImplementor.class)

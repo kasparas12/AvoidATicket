@@ -20,7 +20,7 @@ public class GeolocationContinuousListener
 	}
 
 
-	public GeolocationContinuousListener () throws java.lang.Throwable
+	public GeolocationContinuousListener ()
 	{
 		super ();
 		if (getClass () == GeolocationContinuousListener.class)

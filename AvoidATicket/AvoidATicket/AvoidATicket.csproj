@@ -217,6 +217,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDatabaseHelper.cs" />
+    <Compile Include="ASKActivity.cs" />
+    <Compile Include="FAQActivity.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="MainScreenActivity.cs" />
     <Compile Include="LoginActivity.cs" />
@@ -236,6 +238,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\activity_mainscreen.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_faq.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_ask.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -270,6 +278,9 @@
       <Project>{542f1754-1428-43a8-a59f-1f7a1b6aef3b}</Project>
       <Name>RESTClient</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\success.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

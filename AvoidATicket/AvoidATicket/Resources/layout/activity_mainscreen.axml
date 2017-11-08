@@ -52,4 +52,9 @@
         android:layout_width="match_parent"
         android:id="@+id/clear"
         android:text="Clear markers" />
+    <Button
+        android:text="F.A.Q  |  Ask a question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq" />
 </LinearLayout>
