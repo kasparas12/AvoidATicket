@@ -3,6 +3,8 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Bolts.Tasks.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\ExoPlayer.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Google.Apis.Core.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Microsoft.Data.Sqlite.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Microsoft.EntityFrameworkCore.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Microsoft.EntityFrameworkCore.Relational.dll
@@ -32,6 +34,7 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Interactive.Async.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Text.Encodings.Web.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Xamarin.Android.Support.Annotations.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
@@ -77,6 +80,14 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Console.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Threading.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.ComponentModel.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Linq.Expressions.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Security.Claims.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Net.WebSockets.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Text.Encoding.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Globalization.Extensions.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\netstandard.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Data.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Numerics.dll
@@ -84,7 +95,6 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Mono.Data.Tds.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Mono.Security.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Diagnostics.StackTrace.dll
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Globalization.Extensions.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.IO.Compression.FileSystem.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Runtime.Serialization.dll
@@ -103,16 +113,13 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Xml.XDocument.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.ComponentModel.TypeConverter.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Dynamic.Runtime.dll
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Linq.Expressions.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.ObjectModel.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Text.Encoding.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Reflection.Primitives.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Linq.Queryable.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Diagnostics.Tracing.dll
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Collections.Concurrent.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\RestSharp.dll

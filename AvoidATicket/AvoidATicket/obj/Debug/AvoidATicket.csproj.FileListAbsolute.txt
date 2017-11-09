@@ -409,3 +409,9 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\layout\activity_faq.xml
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\layout\activity_ask.xml
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\drawable\success.png
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\System.Text.Encodings.Web.xml
