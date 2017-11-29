@@ -38,6 +38,7 @@
       </intent-filter>
     </activity>
     <activity android:label="MapActivity" android:name="md5c80583604c74bde7ab5a200aaf791437.MapActivity" />
+    <activity android:label="RegisterActivity" android:name="md5c80583604c74bde7ab5a200aaf791437.RegisterActivity" />
     <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
     <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.ads.InterstitialAdActivity" />
     <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent" />
@@ -62,15 +63,6 @@
          a completely different provider.
         -->
     <provider android:name="com.facebook.internal.FacebookInitProvider" android:authorities="com.report.kontrole.AvoidATicket.FacebookInitProvider" android:exported="false" />
-    <!--
-         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-         with the application context. This config is merged in with the host app's manifest,
-         but there can only be one provider with the same authority activated at any given
-         point; so if the end user has two or more different apps that use Facebook SDK, only the
-         first one will be able to use the provider. To work around this problem, we use the
-         following placeholder in the authority to identify each host application as if it was
-         a completely different provider.
-        -->
     <activity android:name="com.facebook.ads.AudienceNetworkActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
   </application>
   <meta-data android:name="android.support.VERSION" android:value="25.3.1" />

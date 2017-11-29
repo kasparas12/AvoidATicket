@@ -233,6 +233,7 @@
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MapActivity.cs" />
     <Compile Include="MapMarkerContract.cs" />
+    <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -253,6 +254,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\activity_ask.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_register.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

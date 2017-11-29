@@ -53,5 +53,11 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:padding="20dp" />
+        <Button
+            android:text="Register"
+            android:layout_width="292.5dp"
+            android:layout_height="35.5dp"
+            android:id="@+id/Register"
+            android:layout_marginLeft="50.0dp" />
     </LinearLayout>
 </RelativeLayout>

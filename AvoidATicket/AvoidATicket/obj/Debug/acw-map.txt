@@ -26,6 +26,10 @@ AvoidATicket.MapActivity, AvoidATicket;md5c80583604c74bde7ab5a200aaf791437.MapAc
 AvoidATicket.MapActivity, AvoidATicket, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c80583604c74bde7ab5a200aaf791437.MapActivity
 AvoidATicket.MapActivity;md5c80583604c74bde7ab5a200aaf791437.MapActivity
 avoidaticket.MapActivity;md5c80583604c74bde7ab5a200aaf791437.MapActivity
+AvoidATicket.RegisterActivity, AvoidATicket;md5c80583604c74bde7ab5a200aaf791437.RegisterActivity
+AvoidATicket.RegisterActivity, AvoidATicket, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c80583604c74bde7ab5a200aaf791437.RegisterActivity
+AvoidATicket.RegisterActivity;md5c80583604c74bde7ab5a200aaf791437.RegisterActivity
+avoidaticket.RegisterActivity;md5c80583604c74bde7ab5a200aaf791437.RegisterActivity
 Com.Google.Android.Exoplayer2.Trackselection.TrackSelections, ExoPlayer;md53ce4ea341869b8b1661b93bcbf6e6e9a.TrackSelections
 Com.Google.Android.Exoplayer2.Trackselection.TrackSelections, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53ce4ea341869b8b1661b93bcbf6e6e9a.TrackSelections
 Com.Google.Android.Exoplayer2.Trackselection.TrackSelections;md53ce4ea341869b8b1661b93bcbf6e6e9a.TrackSelections

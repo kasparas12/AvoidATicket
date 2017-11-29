@@ -399,13 +399,6 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\System.Interactive.Async.xml
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\RestSharp.xml
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\RESTClient.dll.mdb
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.dll.mdb
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\AvoidATicket.dll.mdb
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\ExoPlayer.dll.mdb
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Plugin.Geolocator.dll.mdb
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Plugin.Permissions.dll.mdb
-C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\RESTClient.dll.mdb
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\layout\activity_faq.xml
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\layout\activity_ask.xml
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\drawable\success.png
@@ -415,3 +408,11 @@ C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\Avoi
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
 C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\res\layout\activity_register.xml
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\RESTClient.dll.mdb
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\bin\Debug\AvoidATicket.dll.mdb
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\AvoidATicket.dll.mdb
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\ExoPlayer.dll.mdb
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Plugin.Geolocator.dll.mdb
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\Plugin.Permissions.dll.mdb
+C:\Users\Tomas\Documents\GitHub\PSI---report-raudonas-busiukas\AvoidATicket\AvoidATicket\obj\Debug\android\assets\RESTClient.dll.mdb

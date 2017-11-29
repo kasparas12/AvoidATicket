@@ -21,6 +21,8 @@ namespace AvoidATicket
         private EditText username;
         private EditText password;
         private Button loginButton;
+        private Button register;
+        private Button back;
 
         public enum LoginType
         {
@@ -41,8 +43,13 @@ namespace AvoidATicket
             manager = CallbackManagerFactory.Create();
             login.RegisterCallback(manager, this);
 
+            register = FindViewById<Button>(Resource.Id.Register);
+            register.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(RegisterActivity));
+                StartActivity(intent);
+            };
 
-           
 
             ///Can be used to generate a key hash
             /*
