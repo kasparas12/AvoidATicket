@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -104,6 +103,7 @@ namespace AvoidATicket
         public async void OnMapReady(GoogleMap googleMap)
         {
             map = googleMap;
+            map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(new LatLng(location.Latitude, location.Longitude), 12.0f));
             googleMap.SetOnMapClickListener(this);
             googleMap.UiSettings.ZoomControlsEnabled = true;
             googleMap.UiSettings.CompassEnabled = true;

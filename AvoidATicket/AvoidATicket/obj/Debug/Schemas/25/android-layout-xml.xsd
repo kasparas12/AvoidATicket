@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>2017-11-29 23:02:07</xs:documentation>
+    <xs:documentation>2018.05.28 14:23:28</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,12 +82,6 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
-      <xs:element ref="com.facebook.ads.NativeAdScrollView" />
-      <xs:element ref="com.facebook.ads.MediaViewVideoRenderer" />
-      <xs:element ref="com.facebook.ads.MediaView" />
-      <xs:element ref="com.facebook.ads.InstreamVideoAdView" />
-      <xs:element ref="com.facebook.ads.AdView" />
-      <xs:element ref="com.facebook.ads.AdChoicesView" />
       <xs:element ref="com.facebook.share.widget.ShareButton" />
       <xs:element ref="com.facebook.share.widget.SendButton" />
       <xs:element ref="com.facebook.share.widget.ShareButtonBase" />
@@ -97,13 +91,29 @@
       <xs:element ref="com.facebook.login.widget.LoginButton" />
       <xs:element ref="com.facebook.login.widget.DeviceLoginButton" />
       <xs:element ref="com.facebook.FacebookButtonBase" />
+      <xs:element ref="com.facebook.ads.NativeAdScrollView" />
+      <xs:element ref="com.facebook.ads.MediaViewVideoRenderer" />
+      <xs:element ref="com.facebook.ads.MediaView" />
+      <xs:element ref="com.facebook.ads.InstreamVideoAdView" />
+      <xs:element ref="com.facebook.ads.AdView" />
+      <xs:element ref="com.facebook.ads.AdChoicesView" />
       <xs:element ref="com.google.android.exoplayer2.ui.SubtitleView" />
       <xs:element ref="com.google.android.exoplayer2.ui.SimpleExoPlayerView" />
       <xs:element ref="com.google.android.exoplayer2.ui.PlaybackControlView" />
       <xs:element ref="com.google.android.exoplayer2.ui.AspectRatioFrameLayout" />
-      <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
-      <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
-      <xs:element ref="android.support.v7.view.menu.ActionMenuItemView" />
+      <xs:element ref="com.google.android.gms.maps.StreetViewPanoramaView" />
+      <xs:element ref="com.google.android.gms.maps.MapView" />
+      <xs:element ref="com.google.android.gms.common.SignInButton" />
+      <xs:element ref="com.google.android.gms.ads.search.SearchAdView" />
+      <xs:element ref="com.google.android.gms.ads.formats.NativeContentAdView" />
+      <xs:element ref="com.google.android.gms.ads.formats.NativeAppInstallAdView" />
+      <xs:element ref="com.google.android.gms.ads.formats.NativeAdView" />
+      <xs:element ref="com.google.android.gms.ads.doubleclick.PublisherAdView" />
+      <xs:element ref="com.google.android.gms.ads.NativeExpressAdView" />
+      <xs:element ref="com.google.android.gms.ads.BaseAdView" />
+      <xs:element ref="com.google.android.gms.ads.AdView" />
+      <xs:element ref="android.support.v7.widget.CardView" />
+      <xs:element ref="android.support.v7.widget.RecyclerView" />
       <xs:element ref="android.support.v7.widget.ViewStubCompat" />
       <xs:element ref="android.support.v7.widget.SwitchCompat" />
       <xs:element ref="android.support.v7.widget.SearchView" />
@@ -127,8 +137,9 @@
       <xs:element ref="android.support.v7.widget.ActionBarContainer" />
       <xs:element ref="android.support.v7.widget.AbsActionBarView" />
       <xs:element ref="android.support.v7.widget.Toolbar" />
-      <xs:element ref="android.support.v7.widget.CardView" />
-      <xs:element ref="android.support.v7.widget.RecyclerView" />
+      <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
+      <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
+      <xs:element ref="android.support.v7.view.menu.ActionMenuItemView" />
       <xs:element ref="android.support.v4.widget.Space" />
       <xs:element ref="android.support.v4.widget.SlidingPaneLayout" />
       <xs:element ref="android.support.v4.widget.NestedScrollView" />
@@ -139,17 +150,6 @@
       <xs:element ref="android.support.v4.view.PagerTitleStrip" />
       <xs:element ref="android.support.v4.view.PagerTabStrip" />
       <xs:element ref="android.support.v4.app.FragmentTabHost" />
-      <xs:element ref="com.google.android.gms.maps.StreetViewPanoramaView" />
-      <xs:element ref="com.google.android.gms.maps.MapView" />
-      <xs:element ref="com.google.android.gms.common.SignInButton" />
-      <xs:element ref="com.google.android.gms.ads.search.SearchAdView" />
-      <xs:element ref="com.google.android.gms.ads.formats.NativeContentAdView" />
-      <xs:element ref="com.google.android.gms.ads.formats.NativeAppInstallAdView" />
-      <xs:element ref="com.google.android.gms.ads.formats.NativeAdView" />
-      <xs:element ref="com.google.android.gms.ads.doubleclick.PublisherAdView" />
-      <xs:element ref="com.google.android.gms.ads.NativeExpressAdView" />
-      <xs:element ref="com.google.android.gms.ads.BaseAdView" />
-      <xs:element ref="com.google.android.gms.ads.AdView" />
       <xs:element ref="include" />
     </xs:choice>
   </xs:group>
@@ -361,29 +361,7 @@
     <xs:attribute ref="android:pointerIcon" />
     <xs:attribute ref="android:forceHasOverlappingRendering" />
     <xs:attribute ref="tools:visibility" />
-    <xs:attribute ref="android:layout_toLeftOf" />
-    <xs:attribute ref="android:layout_toRightOf" />
-    <xs:attribute ref="android:layout_above" />
-    <xs:attribute ref="android:layout_below" />
-    <xs:attribute ref="android:layout_alignBaseline" />
-    <xs:attribute ref="android:layout_alignLeft" />
-    <xs:attribute ref="android:layout_alignTop" />
-    <xs:attribute ref="android:layout_alignRight" />
-    <xs:attribute ref="android:layout_alignBottom" />
-    <xs:attribute ref="android:layout_alignParentLeft" />
-    <xs:attribute ref="android:layout_alignParentTop" />
-    <xs:attribute ref="android:layout_alignParentRight" />
-    <xs:attribute ref="android:layout_alignParentBottom" />
-    <xs:attribute ref="android:layout_centerInParent" />
-    <xs:attribute ref="android:layout_centerHorizontal" />
-    <xs:attribute ref="android:layout_centerVertical" />
-    <xs:attribute ref="android:layout_alignWithParentIfMissing" />
-    <xs:attribute ref="android:layout_toStartOf" />
-    <xs:attribute ref="android:layout_toEndOf" />
-    <xs:attribute ref="android:layout_alignStart" />
-    <xs:attribute ref="android:layout_alignEnd" />
-    <xs:attribute ref="android:layout_alignParentStart" />
-    <xs:attribute ref="android:layout_alignParentEnd" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
     <xs:attribute ref="android:layout_margin" />
@@ -1477,29 +1455,7 @@
     <xs:attribute ref="android:fragmentAllowEnterTransitionOverlap" />
     <xs:attribute ref="android:fragmentAllowReturnTransitionOverlap" />
     <xs:attribute ref="tools:layout" />
-    <xs:attribute ref="android:layout_toLeftOf" />
-    <xs:attribute ref="android:layout_toRightOf" />
-    <xs:attribute ref="android:layout_above" />
-    <xs:attribute ref="android:layout_below" />
-    <xs:attribute ref="android:layout_alignBaseline" />
-    <xs:attribute ref="android:layout_alignLeft" />
-    <xs:attribute ref="android:layout_alignTop" />
-    <xs:attribute ref="android:layout_alignRight" />
-    <xs:attribute ref="android:layout_alignBottom" />
-    <xs:attribute ref="android:layout_alignParentLeft" />
-    <xs:attribute ref="android:layout_alignParentTop" />
-    <xs:attribute ref="android:layout_alignParentRight" />
-    <xs:attribute ref="android:layout_alignParentBottom" />
-    <xs:attribute ref="android:layout_centerInParent" />
-    <xs:attribute ref="android:layout_centerHorizontal" />
-    <xs:attribute ref="android:layout_centerVertical" />
-    <xs:attribute ref="android:layout_alignWithParentIfMissing" />
-    <xs:attribute ref="android:layout_toStartOf" />
-    <xs:attribute ref="android:layout_toEndOf" />
-    <xs:attribute ref="android:layout_alignStart" />
-    <xs:attribute ref="android:layout_alignEnd" />
-    <xs:attribute ref="android:layout_alignParentStart" />
-    <xs:attribute ref="android:layout_alignParentEnd" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
     <xs:attribute ref="android:layout_margin" />
@@ -1510,66 +1466,6 @@
     <xs:attribute ref="android:layout_marginStart" />
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
-  </xs:complexType>
-  <xs:element name="com.facebook.ads.NativeAdScrollView" type="com.facebook.ads.NativeAdScrollView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.NativeAdScrollView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.facebook.ads.NativeAdScrollView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="LinearLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.facebook.ads.MediaViewVideoRenderer" type="com.facebook.ads.MediaViewVideoRenderer">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.MediaViewVideoRenderer</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.facebook.ads.MediaViewVideoRenderer">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.facebook.ads.MediaView" type="com.facebook.ads.MediaView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.MediaView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.facebook.ads.MediaView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="RelativeLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.facebook.ads.InstreamVideoAdView" type="com.facebook.ads.InstreamVideoAdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.InstreamVideoAdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.facebook.ads.InstreamVideoAdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="RelativeLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.facebook.ads.AdView" type="com.facebook.ads.AdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.AdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.facebook.ads.AdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="RelativeLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.facebook.ads.AdChoicesView" type="com.facebook.ads.AdChoicesView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.AdChoicesView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.facebook.ads.AdChoicesView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="RelativeLayout" />
-    </xs:complexContent>
   </xs:complexType>
   <xs:element name="com.facebook.share.widget.ShareButton" type="com.facebook.share.widget.ShareButton">
     <xs:annotation>
@@ -1661,6 +1557,66 @@
       <xs:extension base="Button" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:element name="com.facebook.ads.NativeAdScrollView" type="com.facebook.ads.NativeAdScrollView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.NativeAdScrollView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.facebook.ads.NativeAdScrollView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.facebook.ads.MediaViewVideoRenderer" type="com.facebook.ads.MediaViewVideoRenderer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.MediaViewVideoRenderer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.facebook.ads.MediaViewVideoRenderer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.facebook.ads.MediaView" type="com.facebook.ads.MediaView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.MediaView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.facebook.ads.MediaView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.facebook.ads.InstreamVideoAdView" type="com.facebook.ads.InstreamVideoAdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.InstreamVideoAdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.facebook.ads.InstreamVideoAdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.facebook.ads.AdView" type="com.facebook.ads.AdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.AdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.facebook.ads.AdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.facebook.ads.AdChoicesView" type="com.facebook.ads.AdChoicesView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Xamarin.Facebook.Ads.AdChoicesView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.facebook.ads.AdChoicesView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:element name="com.google.android.exoplayer2.ui.SubtitleView" type="com.google.android.exoplayer2.ui.SubtitleView">
     <xs:annotation>
       <xs:documentation>Runtime Type: Com.Google.Android.Exoplayer2.UI.SubtitleView</xs:documentation>
@@ -1714,34 +1670,152 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.view.menu.ExpandedMenuView" type="android.support.v7.view.menu.ExpandedMenuView">
+  <xs:element name="com.google.android.gms.maps.StreetViewPanoramaView" type="com.google.android.gms.maps.StreetViewPanoramaView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ExpandedMenuView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Gms.Maps.StreetViewPanoramaView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.view.menu.ExpandedMenuView">
+  <xs:complexType name="com.google.android.gms.maps.StreetViewPanoramaView">
     <xs:complexContent mixed="false">
-      <xs:extension base="ListView" />
+      <xs:extension base="FrameLayout" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.view.menu.ListMenuItemView" type="android.support.v7.view.menu.ListMenuItemView">
+  <xs:element name="com.google.android.gms.maps.MapView" type="com.google.android.gms.maps.MapView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ListMenuItemView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Gms.Maps.MapView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.view.menu.ListMenuItemView">
+  <xs:complexType name="com.google.android.gms.maps.MapView">
     <xs:complexContent mixed="false">
-      <xs:extension base="LinearLayout" />
+      <xs:extension base="FrameLayout" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.view.menu.ActionMenuItemView" type="android.support.v7.view.menu.ActionMenuItemView">
+  <xs:element name="com.google.android.gms.common.SignInButton" type="com.google.android.gms.common.SignInButton">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ActionMenuItemView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Gms.Common.SignInButton</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.view.menu.ActionMenuItemView">
+  <xs:complexType name="com.google.android.gms.common.SignInButton">
     <xs:complexContent mixed="false">
-      <xs:extension base="TextView" />
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.ads.search.SearchAdView" type="com.google.android.gms.ads.search.SearchAdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Ads.Search.SearchAdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.ads.search.SearchAdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.ads.formats.NativeContentAdView" type="com.google.android.gms.ads.formats.NativeContentAdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Ads.Formats.NativeContentAdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.ads.formats.NativeContentAdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.ads.formats.NativeAppInstallAdView" type="com.google.android.gms.ads.formats.NativeAppInstallAdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Ads.Formats.NativeAppInstallAdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.ads.formats.NativeAppInstallAdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.ads.formats.NativeAdView" type="com.google.android.gms.ads.formats.NativeAdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Ads.Formats.NativeAdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.ads.formats.NativeAdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.ads.doubleclick.PublisherAdView" type="com.google.android.gms.ads.doubleclick.PublisherAdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Ads.DoubleClick.PublisherAdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.ads.doubleclick.PublisherAdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.ads.NativeExpressAdView" type="com.google.android.gms.ads.NativeExpressAdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Ads.NativeExpressAdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.ads.NativeExpressAdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.ads.BaseAdView" type="com.google.android.gms.ads.BaseAdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Ads.BaseAdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.ads.BaseAdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.ads.AdView" type="com.google.android.gms.ads.AdView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Ads.AdView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.ads.AdView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.CardView" type="android.support.v7.widget.CardView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.CardView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.CardView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout">
+        <xs:attribute ref="app:cardBackgroundColor" />
+        <xs:attribute ref="app:cardCornerRadius" />
+        <xs:attribute ref="app:cardElevation" />
+        <xs:attribute ref="app:cardMaxElevation" />
+        <xs:attribute ref="app:cardUseCompatPadding" />
+        <xs:attribute ref="app:cardPreventCornerOverlap" />
+        <xs:attribute ref="app:contentPadding" />
+        <xs:attribute ref="app:contentPaddingLeft" />
+        <xs:attribute ref="app:contentPaddingRight" />
+        <xs:attribute ref="app:contentPaddingTop" />
+        <xs:attribute ref="app:contentPaddingBottom" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.RecyclerView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.RecyclerView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup">
+        <xs:attribute ref="app:layoutManager" />
+        <xs:attribute ref="app:spanCount" />
+        <xs:attribute ref="app:reverseLayout" />
+        <xs:attribute ref="app:stackFromEnd" />
+        <xs:attribute ref="tools:listitem" />
+      </xs:extension>
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v7.widget.ViewStubCompat" type="android.support.v7.widget.ViewStubCompat">
@@ -2038,42 +2112,34 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.widget.CardView" type="android.support.v7.widget.CardView">
+  <xs:element name="android.support.v7.view.menu.ExpandedMenuView" type="android.support.v7.view.menu.ExpandedMenuView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.CardView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ExpandedMenuView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.widget.CardView">
+  <xs:complexType name="android.support.v7.view.menu.ExpandedMenuView">
     <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="app:cardBackgroundColor" />
-        <xs:attribute ref="app:cardCornerRadius" />
-        <xs:attribute ref="app:cardElevation" />
-        <xs:attribute ref="app:cardMaxElevation" />
-        <xs:attribute ref="app:cardUseCompatPadding" />
-        <xs:attribute ref="app:cardPreventCornerOverlap" />
-        <xs:attribute ref="app:contentPadding" />
-        <xs:attribute ref="app:contentPaddingLeft" />
-        <xs:attribute ref="app:contentPaddingRight" />
-        <xs:attribute ref="app:contentPaddingTop" />
-        <xs:attribute ref="app:contentPaddingBottom" />
-      </xs:extension>
+      <xs:extension base="ListView" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
+  <xs:element name="android.support.v7.view.menu.ListMenuItemView" type="android.support.v7.view.menu.ListMenuItemView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.RecyclerView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ListMenuItemView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.widget.RecyclerView">
+  <xs:complexType name="android.support.v7.view.menu.ListMenuItemView">
     <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="app:layoutManager" />
-        <xs:attribute ref="app:spanCount" />
-        <xs:attribute ref="app:reverseLayout" />
-        <xs:attribute ref="app:stackFromEnd" />
-        <xs:attribute ref="tools:listitem" />
-      </xs:extension>
+      <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.view.menu.ActionMenuItemView" type="android.support.v7.view.menu.ActionMenuItemView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ActionMenuItemView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.view.menu.ActionMenuItemView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v4.widget.Space" type="android.support.v4.widget.Space">
@@ -2176,120 +2242,6 @@
   <xs:complexType name="android.support.v4.app.FragmentTabHost">
     <xs:complexContent mixed="false">
       <xs:extension base="TabHost" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.maps.StreetViewPanoramaView" type="com.google.android.gms.maps.StreetViewPanoramaView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Maps.StreetViewPanoramaView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.maps.StreetViewPanoramaView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.maps.MapView" type="com.google.android.gms.maps.MapView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Maps.MapView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.maps.MapView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.common.SignInButton" type="com.google.android.gms.common.SignInButton">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Common.SignInButton</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.common.SignInButton">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="app:buttonSize" />
-        <xs:attribute ref="app:colorScheme" />
-        <xs:attribute ref="app:scopeUris" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.ads.search.SearchAdView" type="com.google.android.gms.ads.search.SearchAdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Ads.Search.SearchAdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.ads.search.SearchAdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.ads.formats.NativeContentAdView" type="com.google.android.gms.ads.formats.NativeContentAdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Ads.Formats.NativeContentAdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.ads.formats.NativeContentAdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.ads.formats.NativeAppInstallAdView" type="com.google.android.gms.ads.formats.NativeAppInstallAdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Ads.Formats.NativeAppInstallAdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.ads.formats.NativeAppInstallAdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.ads.formats.NativeAdView" type="com.google.android.gms.ads.formats.NativeAdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Ads.Formats.NativeAdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.ads.formats.NativeAdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.ads.doubleclick.PublisherAdView" type="com.google.android.gms.ads.doubleclick.PublisherAdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Ads.DoubleClick.PublisherAdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.ads.doubleclick.PublisherAdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.ads.NativeExpressAdView" type="com.google.android.gms.ads.NativeExpressAdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Ads.NativeExpressAdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.ads.NativeExpressAdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.ads.BaseAdView" type="com.google.android.gms.ads.BaseAdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Ads.BaseAdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.ads.BaseAdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.google.android.gms.ads.AdView" type="com.google.android.gms.ads.AdView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Gms.Ads.AdView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.google.android.gms.ads.AdView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="include" type="include">

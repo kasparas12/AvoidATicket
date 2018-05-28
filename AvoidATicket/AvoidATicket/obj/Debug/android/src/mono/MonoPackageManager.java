@@ -133,6 +133,7 @@ class MonoPackageManager_Resources {
 		"Plugin.Permissions.Abstractions.dll",
 		"Plugin.Permissions.dll",
 		"Remotion.Linq.dll",
+		"RESTClient.dll",
 		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",
@@ -162,7 +163,6 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Base.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
 		"Xamarin.GooglePlayServices.Maps.dll",
-		"RESTClient.dll",
 		"RestSharp.dll",
 	};
 	public static final String[] Dependencies = new String[]{

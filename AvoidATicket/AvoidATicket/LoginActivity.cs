@@ -52,17 +52,18 @@ namespace AvoidATicket
 
 
             ///Can be used to generate a key hash
-            /*
-            PackageInfo info = this.PackageManager.GetPackageInfo("com.report.kontrole.AvoidATicket", PackageInfoFlags.Signatures);
 
-            foreach (Android.Content.PM.Signature signature in info.Signatures)
-            {
-                MessageDigest md = MessageDigest.GetInstance("SHA");
-                md.Update(signature.ToByteArray());
+            //    PackageInfo info = this.PackageManager.GetPackageInfo("com.report.kontrole.AvoidATicket", PackageInfoFlags.Signatures);
 
-                string keyhash = Convert.ToBase64String(md.Digest());
-                Console.WriteLine("KeyHash: {0}", keyhash);
-            }*/
+            //    foreach (Android.Content.PM.Signature signature in info.Signatures)
+            //    {
+            //        MessageDigest md = MessageDigest.GetInstance("SHA");
+            //        md.Update(signature.ToByteArray());
+
+            //        string keyhash = Convert.ToBase64String(md.Digest());
+            //        Console.WriteLine("KeyHash: {0}", keyhash);
+            //    }
+            //
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
