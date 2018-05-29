@@ -18,7 +18,7 @@ public class MediationNativeListenerImplementor
 			"n_onAdLoaded:(Lcom/google/android/gms/ads/mediation/MediationNativeAdapter;Lcom/google/android/gms/ads/mediation/NativeAdMapper;)V:GetOnAdLoaded_Lcom_google_android_gms_ads_mediation_MediationNativeAdapter_Lcom_google_android_gms_ads_mediation_NativeAdMapper_Handler:Android.Gms.Ads.Mediation.IMediationNativeListenerInvoker, Xamarin.GooglePlayServices.Ads\n" +
 			"n_onAdOpened:(Lcom/google/android/gms/ads/mediation/MediationNativeAdapter;)V:GetOnAdOpened_Lcom_google_android_gms_ads_mediation_MediationNativeAdapter_Handler:Android.Gms.Ads.Mediation.IMediationNativeListenerInvoker, Xamarin.GooglePlayServices.Ads\n" +
 			"";
-		mono.android.Runtime.register ("Android.Gms.Ads.Mediation.IMediationNativeListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MediationNativeListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Android.Gms.Ads.Mediation.IMediationNativeListenerImplementor, Xamarin.GooglePlayServices.Ads", MediationNativeListenerImplementor.class, __md_methods);
 	}
 
 
@@ -26,7 +26,7 @@ public class MediationNativeListenerImplementor
 	{
 		super ();
 		if (getClass () == MediationNativeListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Android.Gms.Ads.Mediation.IMediationNativeListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Android.Gms.Ads.Mediation.IMediationNativeListenerImplementor, Xamarin.GooglePlayServices.Ads", "", this, new java.lang.Object[] {  });
 	}
 
 

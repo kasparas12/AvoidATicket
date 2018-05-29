@@ -17,7 +17,7 @@ public class ExoPlayer_EventListenerImplementor
 			"n_onPositionDiscontinuity:()V:GetOnPositionDiscontinuityHandler:Com.Google.Android.Exoplayer2.IExoPlayerEventListenerInvoker, ExoPlayer\n" +
 			"n_onTimelineChanged:(Lcom/google/android/exoplayer2/Timeline;Ljava/lang/Object;)V:GetOnTimelineChanged_Lcom_google_android_exoplayer2_Timeline_Ljava_lang_Object_Handler:Com.Google.Android.Exoplayer2.IExoPlayerEventListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.IExoPlayerEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", ExoPlayer_EventListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.IExoPlayerEventListenerImplementor, ExoPlayer", ExoPlayer_EventListenerImplementor.class, __md_methods);
 	}
 
 
@@ -25,7 +25,7 @@ public class ExoPlayer_EventListenerImplementor
 	{
 		super ();
 		if (getClass () == ExoPlayer_EventListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.IExoPlayerEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.IExoPlayerEventListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

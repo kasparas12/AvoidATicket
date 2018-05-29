@@ -13,7 +13,7 @@ public class ExtractorMediaSource_EventListenerImplementor
 		__md_methods = 
 			"n_onLoadError:(Ljava/io/IOException;)V:GetOnLoadError_Ljava_io_IOException_Handler:Com.Google.Android.Exoplayer2.Source.ExtractorMediaSource/IEventListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Source.ExtractorMediaSource+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", ExtractorMediaSource_EventListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Source.ExtractorMediaSource+IEventListenerImplementor, ExoPlayer", ExtractorMediaSource_EventListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class ExtractorMediaSource_EventListenerImplementor
 	{
 		super ();
 		if (getClass () == ExtractorMediaSource_EventListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Source.ExtractorMediaSource+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Source.ExtractorMediaSource+IEventListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

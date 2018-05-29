@@ -18,7 +18,7 @@ public class AudioRendererEventListenerImplementor
 			"n_onAudioSessionId:(I)V:GetOnAudioSessionId_IHandler:Com.Google.Android.Exoplayer2.Audio.IAudioRendererEventListenerInvoker, ExoPlayer\n" +
 			"n_onAudioTrackUnderrun:(IJJ)V:GetOnAudioTrackUnderrun_IJJHandler:Com.Google.Android.Exoplayer2.Audio.IAudioRendererEventListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Audio.IAudioRendererEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", AudioRendererEventListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Audio.IAudioRendererEventListenerImplementor, ExoPlayer", AudioRendererEventListenerImplementor.class, __md_methods);
 	}
 
 
@@ -26,7 +26,7 @@ public class AudioRendererEventListenerImplementor
 	{
 		super ();
 		if (getClass () == AudioRendererEventListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Audio.IAudioRendererEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Audio.IAudioRendererEventListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

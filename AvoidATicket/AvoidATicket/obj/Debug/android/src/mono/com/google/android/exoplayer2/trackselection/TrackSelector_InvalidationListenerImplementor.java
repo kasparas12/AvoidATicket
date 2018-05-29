@@ -13,7 +13,7 @@ public class TrackSelector_InvalidationListenerImplementor
 		__md_methods = 
 			"n_onTrackSelectionsInvalidated:()V:GetOnTrackSelectionsInvalidatedHandler:Com.Google.Android.Exoplayer2.Trackselection.TrackSelector/IInvalidationListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Trackselection.TrackSelector+IInvalidationListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", TrackSelector_InvalidationListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Trackselection.TrackSelector+IInvalidationListenerImplementor, ExoPlayer", TrackSelector_InvalidationListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class TrackSelector_InvalidationListenerImplementor
 	{
 		super ();
 		if (getClass () == TrackSelector_InvalidationListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Trackselection.TrackSelector+IInvalidationListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Trackselection.TrackSelector+IInvalidationListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

@@ -16,7 +16,7 @@ public class AdListenerImplementor
 			"n_onError:(Lcom/facebook/ads/Ad;Lcom/facebook/ads/AdError;)V:GetOnError_Lcom_facebook_ads_Ad_Lcom_facebook_ads_AdError_Handler:Xamarin.Facebook.Ads.IAdListenerInvoker, Xamarin.Facebook.AudienceNetwork\n" +
 			"n_onLoggingImpression:(Lcom/facebook/ads/Ad;)V:GetOnLoggingImpression_Lcom_facebook_ads_Ad_Handler:Xamarin.Facebook.Ads.IAdListenerInvoker, Xamarin.Facebook.AudienceNetwork\n" +
 			"";
-		mono.android.Runtime.register ("Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", AdListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork", AdListenerImplementor.class, __md_methods);
 	}
 
 
@@ -24,7 +24,7 @@ public class AdListenerImplementor
 	{
 		super ();
 		if (getClass () == AdListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork", "", this, new java.lang.Object[] {  });
 	}
 
 

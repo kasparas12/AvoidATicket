@@ -13,7 +13,7 @@ public class DefaultTrackOutput_UpstreamFormatChangedListenerImplementor
 		__md_methods = 
 			"n_onUpstreamFormatChanged:(Lcom/google/android/exoplayer2/Format;)V:GetOnUpstreamFormatChanged_Lcom_google_android_exoplayer2_Format_Handler:Com.Google.Android.Exoplayer2.Extractor.DefaultTrackOutput/IUpstreamFormatChangedListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Extractor.DefaultTrackOutput+IUpstreamFormatChangedListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", DefaultTrackOutput_UpstreamFormatChangedListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Extractor.DefaultTrackOutput+IUpstreamFormatChangedListenerImplementor, ExoPlayer", DefaultTrackOutput_UpstreamFormatChangedListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class DefaultTrackOutput_UpstreamFormatChangedListenerImplementor
 	{
 		super ();
 		if (getClass () == DefaultTrackOutput_UpstreamFormatChangedListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Extractor.DefaultTrackOutput+IUpstreamFormatChangedListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Extractor.DefaultTrackOutput+IUpstreamFormatChangedListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

@@ -20,7 +20,7 @@ public class MediaViewListenerImplementor
 			"n_onPlay:(Lcom/facebook/ads/MediaView;)V:GetOnPlay_Lcom_facebook_ads_MediaView_Handler:Xamarin.Facebook.Ads.IMediaViewListenerInvoker, Xamarin.Facebook.AudienceNetwork\n" +
 			"n_onVolumeChange:(Lcom/facebook/ads/MediaView;F)V:GetOnVolumeChange_Lcom_facebook_ads_MediaView_FHandler:Xamarin.Facebook.Ads.IMediaViewListenerInvoker, Xamarin.Facebook.AudienceNetwork\n" +
 			"";
-		mono.android.Runtime.register ("Xamarin.Facebook.Ads.IMediaViewListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MediaViewListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Xamarin.Facebook.Ads.IMediaViewListenerImplementor, Xamarin.Facebook.AudienceNetwork", MediaViewListenerImplementor.class, __md_methods);
 	}
 
 
@@ -28,7 +28,7 @@ public class MediaViewListenerImplementor
 	{
 		super ();
 		if (getClass () == MediaViewListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Xamarin.Facebook.Ads.IMediaViewListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Xamarin.Facebook.Ads.IMediaViewListenerImplementor, Xamarin.Facebook.AudienceNetwork", "", this, new java.lang.Object[] {  });
 	}
 
 

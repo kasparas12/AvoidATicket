@@ -13,7 +13,7 @@ public class InAppPurchaseListenerImplementor
 		__md_methods = 
 			"n_onInAppPurchaseRequested:(Lcom/google/android/gms/ads/purchase/InAppPurchase;)V:GetOnInAppPurchaseRequested_Lcom_google_android_gms_ads_purchase_InAppPurchase_Handler:Android.Gms.Ads.Purchase.IInAppPurchaseListenerInvoker, Xamarin.GooglePlayServices.Ads\n" +
 			"";
-		mono.android.Runtime.register ("Android.Gms.Ads.Purchase.IInAppPurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", InAppPurchaseListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Android.Gms.Ads.Purchase.IInAppPurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads", InAppPurchaseListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class InAppPurchaseListenerImplementor
 	{
 		super ();
 		if (getClass () == InAppPurchaseListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Android.Gms.Ads.Purchase.IInAppPurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Android.Gms.Ads.Purchase.IInAppPurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads", "", this, new java.lang.Object[] {  });
 	}
 
 

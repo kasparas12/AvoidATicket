@@ -13,7 +13,7 @@ public class LikeView_OnErrorListenerImplementor
 		__md_methods = 
 			"n_onError:(Lcom/facebook/FacebookException;)V:GetOnError_Lcom_facebook_FacebookException_Handler:Xamarin.Facebook.Share.Widget.LikeView/IOnErrorListenerInvoker, Xamarin.Facebook\n" +
 			"";
-		mono.android.Runtime.register ("Xamarin.Facebook.Share.Widget.LikeView+IOnErrorListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", LikeView_OnErrorListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Xamarin.Facebook.Share.Widget.LikeView+IOnErrorListenerImplementor, Xamarin.Facebook", LikeView_OnErrorListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class LikeView_OnErrorListenerImplementor
 	{
 		super ();
 		if (getClass () == LikeView_OnErrorListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Xamarin.Facebook.Share.Widget.LikeView+IOnErrorListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Xamarin.Facebook.Share.Widget.LikeView+IOnErrorListenerImplementor, Xamarin.Facebook", "", this, new java.lang.Object[] {  });
 	}
 
 

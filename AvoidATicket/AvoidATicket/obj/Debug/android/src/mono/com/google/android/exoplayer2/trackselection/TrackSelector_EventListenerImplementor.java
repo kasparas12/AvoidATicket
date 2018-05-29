@@ -13,7 +13,7 @@ public class TrackSelector_EventListenerImplementor
 		__md_methods = 
 			"n_onTrackSelectionsChanged:(Lcom/google/android/exoplayer2/trackselection/TrackSelections;)V:GetOnTrackSelectionsChanged_Lcom_google_android_exoplayer2_trackselection_TrackSelections_Handler:Com.Google.Android.Exoplayer2.Trackselection.TrackSelector/IEventListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Trackselection.TrackSelector+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", TrackSelector_EventListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Trackselection.TrackSelector+IEventListenerImplementor, ExoPlayer", TrackSelector_EventListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class TrackSelector_EventListenerImplementor
 	{
 		super ();
 		if (getClass () == TrackSelector_EventListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Trackselection.TrackSelector+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Trackselection.TrackSelector+IEventListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

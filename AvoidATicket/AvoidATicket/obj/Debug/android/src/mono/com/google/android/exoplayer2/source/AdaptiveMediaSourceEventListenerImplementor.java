@@ -18,7 +18,7 @@ public class AdaptiveMediaSourceEventListenerImplementor
 			"n_onLoadStarted:(Lcom/google/android/exoplayer2/upstream/DataSpec;IILcom/google/android/exoplayer2/Format;ILjava/lang/Object;JJJ)V:GetOnLoadStarted_Lcom_google_android_exoplayer2_upstream_DataSpec_IILcom_google_android_exoplayer2_Format_ILjava_lang_Object_JJJHandler:Com.Google.Android.Exoplayer2.Source.IAdaptiveMediaSourceEventListenerInvoker, ExoPlayer\n" +
 			"n_onUpstreamDiscarded:(IJJ)V:GetOnUpstreamDiscarded_IJJHandler:Com.Google.Android.Exoplayer2.Source.IAdaptiveMediaSourceEventListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Source.IAdaptiveMediaSourceEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", AdaptiveMediaSourceEventListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Source.IAdaptiveMediaSourceEventListenerImplementor, ExoPlayer", AdaptiveMediaSourceEventListenerImplementor.class, __md_methods);
 	}
 
 
@@ -26,7 +26,7 @@ public class AdaptiveMediaSourceEventListenerImplementor
 	{
 		super ();
 		if (getClass () == AdaptiveMediaSourceEventListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Source.IAdaptiveMediaSourceEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Source.IAdaptiveMediaSourceEventListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

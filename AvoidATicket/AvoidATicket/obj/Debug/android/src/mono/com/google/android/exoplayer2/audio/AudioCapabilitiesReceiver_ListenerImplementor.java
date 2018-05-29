@@ -13,7 +13,7 @@ public class AudioCapabilitiesReceiver_ListenerImplementor
 		__md_methods = 
 			"n_onAudioCapabilitiesChanged:(Lcom/google/android/exoplayer2/audio/AudioCapabilities;)V:GetOnAudioCapabilitiesChanged_Lcom_google_android_exoplayer2_audio_AudioCapabilities_Handler:Com.Google.Android.Exoplayer2.Audio.AudioCapabilitiesReceiver/IListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Audio.AudioCapabilitiesReceiver+IListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", AudioCapabilitiesReceiver_ListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Audio.AudioCapabilitiesReceiver+IListenerImplementor, ExoPlayer", AudioCapabilitiesReceiver_ListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class AudioCapabilitiesReceiver_ListenerImplementor
 	{
 		super ();
 		if (getClass () == AudioCapabilitiesReceiver_ListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Audio.AudioCapabilitiesReceiver+IListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Audio.AudioCapabilitiesReceiver+IListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

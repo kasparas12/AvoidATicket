@@ -13,7 +13,7 @@ public class BandwidthMeter_EventListenerImplementor
 		__md_methods = 
 			"n_onBandwidthSample:(IJJ)V:GetOnBandwidthSample_IJJHandler:Com.Google.Android.Exoplayer2.Upstream.IBandwidthMeterEventListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Upstream.IBandwidthMeterEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", BandwidthMeter_EventListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Upstream.IBandwidthMeterEventListenerImplementor, ExoPlayer", BandwidthMeter_EventListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class BandwidthMeter_EventListenerImplementor
 	{
 		super ();
 		if (getClass () == BandwidthMeter_EventListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Upstream.IBandwidthMeterEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Upstream.IBandwidthMeterEventListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

@@ -13,7 +13,7 @@ public class PlaybackControlView_VisibilityListenerImplementor
 		__md_methods = 
 			"n_onVisibilityChange:(I)V:GetOnVisibilityChange_IHandler:Com.Google.Android.Exoplayer2.UI.PlaybackControlView/IVisibilityListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.UI.PlaybackControlView+IVisibilityListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", PlaybackControlView_VisibilityListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.UI.PlaybackControlView+IVisibilityListenerImplementor, ExoPlayer", PlaybackControlView_VisibilityListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class PlaybackControlView_VisibilityListenerImplementor
 	{
 		super ();
 		if (getClass () == PlaybackControlView_VisibilityListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.UI.PlaybackControlView+IVisibilityListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.UI.PlaybackControlView+IVisibilityListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

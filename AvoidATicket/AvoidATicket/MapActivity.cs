@@ -18,6 +18,9 @@ using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using RESTClient;
 using System.Threading.Tasks;
+using Xamarin.Facebook.Login;
+using Xamarin.Facebook;
+using Xamarin.Facebook.Login.Widget;
 
 namespace AvoidATicket
 {
@@ -26,6 +29,10 @@ namespace AvoidATicket
     {
         private GoogleMap map;
         private bool allowMarkerPlacing;
+        private Bundle arguments;
+        // Arguments (Facebook login)
+        private Profile facebookProfile;
+        private String login_type;
 
         LocationManager locationManager;
         String provider;
@@ -64,7 +71,7 @@ namespace AvoidATicket
                     "km. atstumu nuo jūsų buvimo vietos. Bandėte padėti žymeklį " + Math.Round(distance, 2) + 
                     "km. atstumu.", ToastLength.Long);
                 aToast.Show();
-                System.Diagnostics.Debug.WriteLine("COORD1: " + lat1 + " " + lng1 + "   |   COORD2 " + lat2 + " " + lng2);
+              //  System.Diagnostics.Debug.WriteLine("COORD1: " + lat1 + " " + lng1 + "   |   COORD2 " + lat2 + " " + lng2);
             }
             else
             {
@@ -114,9 +121,13 @@ namespace AvoidATicket
 
             foreach (RESTClient.Marker marker in markers)
             {
-                MarkerOptions options = new MarkerOptions();
-                options.SetPosition(new LatLng(marker.Latitude, marker.Longtitude));
-                googleMap.AddMarker(options);
+
+                //if (marker.MarkingTime.Value.Date == DateTime.Today.Date)
+                //{
+                    MarkerOptions options = new MarkerOptions();
+                    options.SetPosition(new LatLng(marker.Latitude, marker.Longtitude));
+                    googleMap.AddMarker(options);
+                //}
             }
         }
 
@@ -124,7 +135,17 @@ namespace AvoidATicket
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            arguments = this.Intent.Extras;
+            login_type = arguments.GetString("login_type");
+
             SetContentView(Resource.Layout.activity_map);
+
+            if (login_type.Equals("Facebook"))
+            {
+                facebookProfile = arguments.GetParcelable("user_profile") as Profile;
+                ProfilePictureView profile_image = FindViewById<ProfilePictureView>(Resource.Id.profile_image);
+                profile_image.ProfileId = facebookProfile.Id;
+            }
 
             allowMarkerPlacing = Intent.GetBooleanExtra("allowMarkerPlacing", false);
 
@@ -149,6 +170,28 @@ namespace AvoidATicket
 
             MapFragment mapFragment = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
             mapFragment.GetMapAsync(this);
+
+            Button place_marker = FindViewById<Button>(Resource.Id.placeMarker);
+            place_marker.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(ActivityListBusStops));
+
+                intent.PutExtra("MapGoogle", JsonConvert.SerializeObject(map));
+                StartActivityForResult(intent,0);
+            };
+            Button log_off = FindViewById<Button>(Resource.Id.log_off_button);
+            log_off.Click += delegate
+            {
+                    LoginManager.Instance.LogOut();
+                    Finish();
+            };
+
+            Button faq = FindViewById<Button>(Resource.Id.faq);
+            faq.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(FAQActivity));
+                StartActivity(intent);
+            };
 
         }
 
@@ -185,7 +228,28 @@ namespace AvoidATicket
             map.MoveCamera(camera);
         }
 
-        void ILocationListener.OnProviderDisabled(string provider)
+        protected async override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+            if (resultCode == Result.Ok)
+            {
+                Console.Write("a");
+                DBAccess access = new DBAccess();
+                List<RESTClient.Marker> markers = await access.RetrieveMarkerList();
+
+                foreach (RESTClient.Marker marker in markers)
+                {
+
+                    //if (marker.MarkingTime.Value.Date == DateTime.Today.Date)
+                    //{
+                    MarkerOptions options = new MarkerOptions();
+                    options.SetPosition(new LatLng(marker.Latitude, marker.Longtitude));
+                    map.AddMarker(options);
+                    //}
+                }
+            }
+        }
+                void ILocationListener.OnProviderDisabled(string provider)
         {
             System.Diagnostics.Debug.WriteLine("Lops ijunk GPS");
             Toast aToast = Toast.MakeText(this, "Please turn on GPS services so the app can find your location", ToastLength.Long);

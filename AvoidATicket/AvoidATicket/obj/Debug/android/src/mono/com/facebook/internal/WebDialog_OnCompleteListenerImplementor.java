@@ -13,7 +13,7 @@ public class WebDialog_OnCompleteListenerImplementor
 		__md_methods = 
 			"n_onComplete:(Landroid/os/Bundle;Lcom/facebook/FacebookException;)V:GetOnComplete_Landroid_os_Bundle_Lcom_facebook_FacebookException_Handler:Xamarin.Facebook.Internal.WebDialog/IOnCompleteListenerInvoker, Xamarin.Facebook\n" +
 			"";
-		mono.android.Runtime.register ("Xamarin.Facebook.Internal.WebDialog+IOnCompleteListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", WebDialog_OnCompleteListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Xamarin.Facebook.Internal.WebDialog+IOnCompleteListenerImplementor, Xamarin.Facebook", WebDialog_OnCompleteListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class WebDialog_OnCompleteListenerImplementor
 	{
 		super ();
 		if (getClass () == WebDialog_OnCompleteListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Xamarin.Facebook.Internal.WebDialog+IOnCompleteListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Xamarin.Facebook.Internal.WebDialog+IOnCompleteListenerImplementor, Xamarin.Facebook", "", this, new java.lang.Object[] {  });
 	}
 
 

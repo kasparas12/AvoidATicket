@@ -14,7 +14,7 @@ public class StreamingDrmSessionManager_EventListenerImplementor
 			"n_onDrmKeysLoaded:()V:GetOnDrmKeysLoadedHandler:Com.Google.Android.Exoplayer2.Drm.StreamingDrmSessionManager/IEventListenerInvoker, ExoPlayer\n" +
 			"n_onDrmSessionManagerError:(Ljava/lang/Exception;)V:GetOnDrmSessionManagerError_Ljava_lang_Exception_Handler:Com.Google.Android.Exoplayer2.Drm.StreamingDrmSessionManager/IEventListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Drm.StreamingDrmSessionManager+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", StreamingDrmSessionManager_EventListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Drm.StreamingDrmSessionManager+IEventListenerImplementor, ExoPlayer", StreamingDrmSessionManager_EventListenerImplementor.class, __md_methods);
 	}
 
 
@@ -22,7 +22,7 @@ public class StreamingDrmSessionManager_EventListenerImplementor
 	{
 		super ();
 		if (getClass () == StreamingDrmSessionManager_EventListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Drm.StreamingDrmSessionManager+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Drm.StreamingDrmSessionManager+IEventListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

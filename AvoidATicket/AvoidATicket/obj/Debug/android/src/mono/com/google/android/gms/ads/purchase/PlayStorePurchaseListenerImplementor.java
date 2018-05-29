@@ -14,7 +14,7 @@ public class PlayStorePurchaseListenerImplementor
 			"n_isValidPurchase:(Ljava/lang/String;)Z:GetIsValidPurchase_Ljava_lang_String_Handler:Android.Gms.Ads.Purchase.IPlayStorePurchaseListenerInvoker, Xamarin.GooglePlayServices.Ads\n" +
 			"n_onInAppPurchaseFinished:(Lcom/google/android/gms/ads/purchase/InAppPurchaseResult;)V:GetOnInAppPurchaseFinished_Lcom_google_android_gms_ads_purchase_InAppPurchaseResult_Handler:Android.Gms.Ads.Purchase.IPlayStorePurchaseListenerInvoker, Xamarin.GooglePlayServices.Ads\n" +
 			"";
-		mono.android.Runtime.register ("Android.Gms.Ads.Purchase.IPlayStorePurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", PlayStorePurchaseListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Android.Gms.Ads.Purchase.IPlayStorePurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads", PlayStorePurchaseListenerImplementor.class, __md_methods);
 	}
 
 
@@ -22,7 +22,7 @@ public class PlayStorePurchaseListenerImplementor
 	{
 		super ();
 		if (getClass () == PlayStorePurchaseListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Android.Gms.Ads.Purchase.IPlayStorePurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Android.Gms.Ads.Purchase.IPlayStorePurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads", "", this, new java.lang.Object[] {  });
 	}
 
 

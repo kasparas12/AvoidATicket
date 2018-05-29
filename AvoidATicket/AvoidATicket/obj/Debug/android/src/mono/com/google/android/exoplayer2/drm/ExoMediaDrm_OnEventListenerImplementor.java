@@ -13,7 +13,7 @@ public class ExoMediaDrm_OnEventListenerImplementor
 		__md_methods = 
 			"n_onEvent:(Lcom/google/android/exoplayer2/drm/ExoMediaDrm;[BII[B)V:GetOnEvent_Lcom_google_android_exoplayer2_drm_ExoMediaDrm_arrayBIIarrayBHandler:Com.Google.Android.Exoplayer2.Drm.IExoMediaDrmOnEventListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Drm.IExoMediaDrmOnEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", ExoMediaDrm_OnEventListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.Drm.IExoMediaDrmOnEventListenerImplementor, ExoPlayer", ExoMediaDrm_OnEventListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class ExoMediaDrm_OnEventListenerImplementor
 	{
 		super ();
 		if (getClass () == ExoMediaDrm_OnEventListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Drm.IExoMediaDrmOnEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.Drm.IExoMediaDrmOnEventListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 

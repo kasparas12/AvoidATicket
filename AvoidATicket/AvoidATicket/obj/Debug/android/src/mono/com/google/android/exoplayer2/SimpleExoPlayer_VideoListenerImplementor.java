@@ -15,7 +15,7 @@ public class SimpleExoPlayer_VideoListenerImplementor
 			"n_onVideoSizeChanged:(IIIF)V:GetInvokeOnVideoSizeChanged_IIIFHandler:Com.Google.Android.Exoplayer2.SimpleExoPlayer/IVideoListenerInvoker, ExoPlayer\n" +
 			"n_onVideoTracksDisabled:()V:GetOnVideoTracksDisabledHandler:Com.Google.Android.Exoplayer2.SimpleExoPlayer/IVideoListenerInvoker, ExoPlayer\n" +
 			"";
-		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.SimpleExoPlayer+IVideoListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", SimpleExoPlayer_VideoListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Google.Android.Exoplayer2.SimpleExoPlayer+IVideoListenerImplementor, ExoPlayer", SimpleExoPlayer_VideoListenerImplementor.class, __md_methods);
 	}
 
 
@@ -23,7 +23,7 @@ public class SimpleExoPlayer_VideoListenerImplementor
 	{
 		super ();
 		if (getClass () == SimpleExoPlayer_VideoListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.SimpleExoPlayer+IVideoListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Google.Android.Exoplayer2.SimpleExoPlayer+IVideoListenerImplementor, ExoPlayer", "", this, new java.lang.Object[] {  });
 	}
 
 
