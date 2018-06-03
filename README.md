@@ -1,13 +1,16 @@
-# PSI II/II programa - AvoidATicket
 
-Paskirtis: programėlės naudotojai gali matyti kontrolės buvimo vietą realiuoju metu.
+<h1># PSI II/II programa - AvoidATicket</h1>
+
+<h2>Paskirtis: programėlės naudotojai gali matyti kontrolės buvimo vietą realiuoju metu.</h2>
 
 Komanda:
 
-Elena Reivytytė
-Matas Šilinskas
-Tadas Žaliauskas
-Aidas Vaikšnoras
-Kasparas Taminskas
+<ul>
+<li>Elena Reivytytė</li>
+<li>Matas Šilinskas</li>
+<li>Tadas Žaliauskas</li>
+<li>Aidas Vaikšnoras</li>
+<li>Kasparas Taminskas</li>
+</ul>
 
-Technologija: Xamarin Android aplikaciją, naudojanti Facebook, Google ir Trafi API
+<h2>Technologija: Xamarin Android aplikacija, naudojanti Facebook, Google ir Trafi API</h2>
